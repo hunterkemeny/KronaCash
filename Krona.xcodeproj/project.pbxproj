@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */; };
-		F1F8BD3122DD829C00075D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD3022DD829C00075D33 /* ViewController.swift */; };
+		F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD3022DD829C00075D33 /* FeedViewController.swift */; };
 		F1F8BD3422DD829C00075D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8BD3222DD829C00075D33 /* Main.storyboard */; };
 		F1F8BD3622DD82A300075D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F8BD3522DD82A300075D33 /* Assets.xcassets */; };
 		F1F8BD3922DD82A300075D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */; };
 		F1F8BD4422DD82A300075D33 /* KronaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD4322DD82A300075D33 /* KronaTests.swift */; };
 		F1F8BD4F22DD82A300075D33 /* KronaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD4E22DD82A300075D33 /* KronaUITests.swift */; };
+		F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */; };
+		F1F8BD5F22DD895E00075D33 /* VisitedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD5E22DD895E00075D33 /* VisitedViewController.swift */; };
+		F1F8BD6122DD8B2100075D33 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD6022DD8B2100075D33 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		F1F8BD2B22DD829C00075D33 /* Krona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1F8BD3022DD829C00075D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1F8BD3022DD829C00075D33 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F1F8BD3322DD829C00075D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1F8BD3522DD82A300075D33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F8BD3822DD82A300075D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		F1F8BD4A22DD82A300075D33 /* KronaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KronaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8BD4E22DD82A300075D33 /* KronaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KronaUITests.swift; sourceTree = "<group>"; };
 		F1F8BD5022DD82A300075D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralsViewController.swift; sourceTree = "<group>"; };
+		F1F8BD5E22DD895E00075D33 /* VisitedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedViewController.swift; sourceTree = "<group>"; };
+		F1F8BD6022DD8B2100075D33 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
-				F1F8BD3022DD829C00075D33 /* ViewController.swift */,
+				F1F8BD3022DD829C00075D33 /* FeedViewController.swift */,
+				F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */,
+				F1F8BD5E22DD895E00075D33 /* VisitedViewController.swift */,
+				F1F8BD6022DD8B2100075D33 /* SettingsViewController.swift */,
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
 				F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */,
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F8BD3122DD829C00075D33 /* ViewController.swift in Sources */,
+				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
+				F1F8BD5F22DD895E00075D33 /* VisitedViewController.swift in Sources */,
+				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
+				F1F8BD6122DD8B2100075D33 /* SettingsViewController.swift in Sources */,
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
