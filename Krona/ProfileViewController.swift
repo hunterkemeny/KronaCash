@@ -10,11 +10,18 @@ import Foundation
 import UIKit
 
 class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
 
     
     @IBOutlet weak var profileTableView: UITableView!
     
     let profileArray = ["Profile + Membership Status", "Linked Cards", "History", "Settings", "Membership", "Social","Support", "TOS/Privacy"]
+    
+//    func parts(labels: [String]) -> String {
+ //       for title in labels {
+            
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +48,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         cell.textLabel!.text = profileArray[indexPath.row]
 
-        
         return cell
     }
     
