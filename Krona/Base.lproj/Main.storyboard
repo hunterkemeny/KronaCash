@@ -21,7 +21,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="HlK-mN-vqE">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="hNz-lj-oGQ">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="hNz-lj-oGQ">
                             <connections>
                                 <segue destination="JZv-H0-hpR" kind="show" id="Coe-Bt-3qF"/>
                             </connections>
@@ -32,20 +32,53 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="G7L-lI-DE8">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JZv-H0-hpR" customClass="SettingsViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JZv-H0-hpR" customClass="ProfileViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUK-Bt-5Mv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R0H-XF-w9M">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="tbd-Rg-sId">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tbd-Rg-sId" id="OwF-ua-aHo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell2" id="Puv-Q4-BI8">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Puv-Q4-BI8" id="jJH-so-NS1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R0H-XF-w9M" firstAttribute="leading" secondItem="8jw-za-UPr" secondAttribute="leading" id="MGh-Ij-Y8f"/>
+                            <constraint firstItem="R0H-XF-w9M" firstAttribute="trailing" secondItem="8jw-za-UPr" secondAttribute="trailing" id="bZw-8b-lHV"/>
+                            <constraint firstItem="R0H-XF-w9M" firstAttribute="top" secondItem="MUK-Bt-5Mv" secondAttribute="top" constant="88" id="cuh-KB-z5p"/>
+                            <constraint firstAttribute="bottom" secondItem="R0H-XF-w9M" secondAttribute="bottom" id="hLX-uj-klJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8jw-za-UPr"/>
                     </view>
+                    <connections>
+                        <outlet property="profileTableView" destination="R0H-XF-w9M" id="ArS-qL-Wyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wi-2s-lo4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2959" y="832"/>
+            <point key="canvasLocation" x="2957.971014492754" y="831.69642857142856"/>
         </scene>
         <!--Visited View Controller-->
         <scene sceneID="RbH-I0-nZd">
@@ -58,7 +91,7 @@
                         <viewLayoutGuide key="safeArea" id="zIR-zO-qxz"/>
                     </view>
                     <navigationItem key="navigationItem" id="fKB-D6-NzM">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="S9g-n7-02E">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="S9g-n7-02E">
                             <connections>
                                 <segue destination="JZv-H0-hpR" kind="show" id="v6d-lv-g5c"/>
                             </connections>
@@ -80,7 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="364-C2-mlm"/>
                     </view>
                     <navigationItem key="navigationItem" id="r3U-Ou-Iv5">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="0Bi-dD-YN0">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="0Bi-dD-YN0">
                             <connections>
                                 <segue destination="JZv-H0-hpR" kind="show" id="3XE-Uw-DS7"/>
                             </connections>
@@ -171,6 +204,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Coe-Bt-3qF"/>
+        <segue reference="3XE-Uw-DS7"/>
     </inferredMetricsTieBreakers>
 </document>
