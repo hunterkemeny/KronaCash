@@ -6,7 +6,6 @@
 //  Copyright © 2019 Krona Technologies Incorporated. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class VisitedViewController: UIViewController {
