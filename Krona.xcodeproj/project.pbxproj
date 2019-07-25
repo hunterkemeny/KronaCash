@@ -11,6 +11,7 @@
 		F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */; };
 		F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */; };
 		F12DDC8022E57E1B008114D7 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */; };
+		F19078D922E9543500101213 /* defaultRestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F19078D822E9543500101213 /* defaultRestImage.png */; };
 		F1EEDD5022E93E3D00DEC2E6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */; };
 		F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */; };
 		F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewController.swift; sourceTree = "<group>"; };
 		F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
+		F19078D822E9543500101213 /* defaultRestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultRestImage.png; sourceTree = "<group>"; };
 		F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		F1F8BD2B22DD829C00075D33 /* Krona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krona.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,14 +116,15 @@
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
 				F1F8BD3022DD829C00075D33 /* FeedViewController.swift */,
 				F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */,
-				F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */,
 				25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */,
+				F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */,
+				F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */,
 				F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */,
 				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
 				F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */,
-				F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */,
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
+				F19078D822E9543500101213 /* defaultRestImage.png */,
 				F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */,
 				F1F8BD3A22DD82A300075D33 /* Info.plist */,
 			);
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F8BD3922DD82A300075D33 /* LaunchScreen.storyboard in Resources */,
+				F19078D922E9543500101213 /* defaultRestImage.png in Resources */,
 				F1F8BD3622DD82A300075D33 /* Assets.xcassets in Resources */,
 				F1F8BD3422DD829C00075D33 /* Main.storyboard in Resources */,
 			);

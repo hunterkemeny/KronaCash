@@ -88,9 +88,8 @@
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="visitedLabel" destination="aj5-mP-DTi" id="eVO-Sg-iVC"/>
-                                                    <outlet property="restaurantPicture" destination="1FY-25-YeJ" id="LHf-00-zIg"/>
-                                                    <outlet property="visitedLabel" destination="aj5-mP-DTi" id="rNO-gp-Vfd"/>
+                                                    <outlet property="restaurantPicture" destination="1FY-25-YeJ" id="yy8-Q0-ZM7"/>
+                                                    <outlet property="visitedLabel" destination="aj5-mP-DTi" id="MAK-UO-hn6"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -116,7 +115,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="y8O-yl-5OK" id="yzB-R7-Y0c"/>
+                        <outlet property="tableView" destination="y8O-yl-5OK" id="JpS-oq-1wU"/>
+                        <outlet property="visitedLabel" destination="aj5-mP-DTi" id="iL4-pf-wnQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3q-0R-AAL" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,12 +13,11 @@ class RestaurantTableViewCell: UITableViewCell {
     //MARK: Properties
 
 
-    @IBOutlet weak var visitedLabel: UILabel!
     @IBOutlet weak var restaurantPicture: UIImageView!
     
     
     func setAttributes(restaurant:Restaurant){
-        visitedLabel.text = restaurant.name
+        nameLabel.text = restaurant.name
         restaurantPicture.image = restaurant.icon
     }
     
