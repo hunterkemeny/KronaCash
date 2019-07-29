@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Feed-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FeedViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="P5T-bB-w4d"/>
+                    <tabBarItem key="tabBarItem" title="Feed" id="P5T-bB-w4d"/>
                     <navigationItem key="navigationItem" id="HlK-mN-vqE">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="hNz-lj-oGQ"/>
                     </navigationItem>
@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="703" y="138"/>
         </scene>
-        <!--Item-->
+        <!--Visited-->
         <scene sceneID="RbH-I0-nZd">
             <objects>
                 <viewController storyboardIdentifier="VisitedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LKs-MQ-bWv" customClass="VisitedViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,8 +97,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1FY-25-YeJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="99"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1FY-25-YeJ">
+                                                            <rect key="frame" x="0.0" y="-0.5" width="100" height="100.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="HtG-md-sCc"/>
                                                                 <constraint firstAttribute="height" constant="100" id="ewc-Wy-9aB"/>
@@ -115,6 +115,7 @@
                                                         <constraint firstItem="1FY-25-YeJ" firstAttribute="leading" secondItem="Z2t-Co-AN1" secondAttribute="leading" id="VcK-j0-fjU"/>
                                                         <constraint firstItem="aj5-mP-DTi" firstAttribute="leading" secondItem="1FY-25-YeJ" secondAttribute="trailing" constant="10" id="WZ5-bw-0ao"/>
                                                         <constraint firstItem="aj5-mP-DTi" firstAttribute="leading" secondItem="1FY-25-YeJ" secondAttribute="trailing" constant="10" id="beF-Bm-ljx"/>
+                                                        <constraint firstItem="1FY-25-YeJ" firstAttribute="centerY" secondItem="Z2t-Co-AN1" secondAttribute="centerY" id="sOr-yj-8dZ"/>
                                                         <constraint firstItem="aj5-mP-DTi" firstAttribute="centerY" secondItem="Z2t-Co-AN1" secondAttribute="centerY" id="wgj-cX-bCC"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
@@ -138,7 +139,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zIR-zO-qxz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AVk-kF-qVd"/>
+                    <tabBarItem key="tabBarItem" title="Visited" id="AVk-kF-qVd"/>
                     <navigationItem key="navigationItem" id="fKB-D6-NzM">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="S9g-n7-02E"/>
                     </navigationItem>
@@ -477,7 +478,7 @@
             </objects>
             <point key="canvasLocation" x="2697" y="138"/>
         </scene>
-        <!--Item-->
+        <!--Refer-->
         <scene sceneID="2hO-Cf-wsd">
             <objects>
                 <viewController storyboardIdentifier="ReferralsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaJ-G4-OD5" customClass="ReferralsViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
@@ -487,7 +488,7 @@
                         <color key="backgroundColor" red="1" green="0.39252288568457827" blue="0.7473607670539133" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="364-C2-mlm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WXQ-VM-jdS"/>
+                    <tabBarItem key="tabBarItem" title="Refer" id="WXQ-VM-jdS"/>
                     <navigationItem key="navigationItem" id="r3U-Ou-Iv5">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="0Bi-dD-YN0"/>
                     </navigationItem>
@@ -518,11 +519,11 @@
             </objects>
             <point key="canvasLocation" x="-228" y="977"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="4HN-le-msn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kez-jy-Lq7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="19B-Zt-SXd"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="19B-Zt-SXd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7l8-4L-WmT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
