@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */; };
+		4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */; };
+		4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */; };
+		4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */; };
 		F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */; };
 		F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */; };
-		F12DDC8022E57E1B008114D7 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */; };
 		F19078D922E9543500101213 /* defaultRestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F19078D822E9543500101213 /* defaultRestImage.png */; };
 		F1EEDD5022E93E3D00DEC2E6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */; };
 		F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */; };
@@ -43,9 +45,11 @@
 
 /* Begin PBXFileReference section */
 		25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitedViewController.swift; sourceTree = "<group>"; };
+		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
+		4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewController.swift; sourceTree = "<group>"; };
-		F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
 		F19078D822E9543500101213 /* defaultRestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultRestImage.png; sourceTree = "<group>"; };
 		F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,9 +94,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3B45A322EE53AC0040C2C4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */,
+				4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */,
+				4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4C3B45A422EE53CD0040C2C4 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F1F8BD3022DD829C00075D33 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		4C3B45A522EE53DB0040C2C4 /* Referrals */ = {
+			isa = PBXGroup;
+			children = (
+				F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */,
+			);
+			path = Referrals;
+			sourceTree = "<group>";
+		};
+		4C3B45A622EE53E90040C2C4 /* Visited */ = {
+			isa = PBXGroup;
+			children = (
+				25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */,
+				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
+				F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */,
+			);
+			path = Visited;
+			sourceTree = "<group>";
+		};
+		4C3B45AF22EF64B00040C2C4 /* Ded */ = {
+			isa = PBXGroup;
+			children = (
+				F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */,
+				4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */,
+			);
+			path = Ded;
+			sourceTree = "<group>";
+		};
 		F1F8BD2222DD829C00075D33 = {
 			isa = PBXGroup;
 			children = (
+				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
 				F1F8BD4D22DD82A300075D33 /* KronaUITests */,
@@ -113,15 +163,11 @@
 		F1F8BD2D22DD829C00075D33 /* Krona */ = {
 			isa = PBXGroup;
 			children = (
-				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
-				F1F8BD3022DD829C00075D33 /* FeedViewController.swift */,
-				F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */,
-				25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */,
-				F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */,
-				F12DDC7F22E57E1B008114D7 /* SettingsLabel.swift */,
-				F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */,
-				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
-				F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */,
+				4C3B45AF22EF64B00040C2C4 /* Ded */,
+				4C3B45A622EE53E90040C2C4 /* Visited */,
+				4C3B45A522EE53DB0040C2C4 /* Referrals */,
+				4C3B45A422EE53CD0040C2C4 /* Feed */,
+				4C3B45A322EE53AC0040C2C4 /* Settings */,
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
 				F19078D822E9543500101213 /* defaultRestImage.png */,
@@ -283,13 +329,15 @@
 			files = (
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */,
-				F12DDC8022E57E1B008114D7 /* SettingsLabel.swift in Sources */,
+				4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */,
 				F1EEDD5022E93E3D00DEC2E6 /* Restaurant.swift in Sources */,
 				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
 				F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */,
 				25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */,
 				F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */,
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
+				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,
+				4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
