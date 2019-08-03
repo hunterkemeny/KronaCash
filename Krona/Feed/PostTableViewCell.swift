@@ -10,7 +10,8 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell
 {
-    @IBOutlet private weak var postCollectionView: UICollectionView!
+
+    @IBOutlet weak var postCollectionView: UICollectionView!
     @IBOutlet private weak var collectionLabel: UILabel!
     
     func setAttributes(post: Post)

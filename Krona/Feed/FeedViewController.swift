@@ -69,7 +69,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
-        print(indexPath.row)
+    //    print(indexPath.row)
 
         if indexPath.row == 0
         {
@@ -105,8 +105,9 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         print(collectionView.tag)
-        
-        if collectionView.tag == 0
+        var num = collectionView.tag
+
+        if num == 0
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
@@ -114,7 +115,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.setAttributes(post: post)
             return cell
         }
-        else if collectionView.tag == 1
+        else if num == 1
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopIconsCollectionViewCell", for: indexPath) as! ShopIconsCollectionViewCell

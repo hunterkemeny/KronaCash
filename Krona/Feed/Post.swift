@@ -41,13 +41,13 @@ struct Post
         
         let walmart = Company(companyName: "Walmart", iconImage: UIImage(named: "walmart"))
         let postWal = Post(category: "Deals", createdBy: walmart, image: UIImage(named: "walmartDeal"), distance: 5.4, classify: "For You")
-        
+
         posts.append(postChip)
         posts.append(postSB)
         posts.append(postMcD)
         posts.append(postNobu)
         posts.append(postWal)
-        
+
         return posts
     }
 }
