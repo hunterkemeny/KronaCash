@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "pancake.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "defaultRestImage.png",
       "scale" : "2x"
     },
     {
