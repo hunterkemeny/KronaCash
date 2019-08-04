@@ -18,9 +18,5 @@ class Restaurant
         self.name = name
         self.icon = icon
         self.isFavorite = isFavorite
-    }
-
-    
-    
-    
+    }    
 }
