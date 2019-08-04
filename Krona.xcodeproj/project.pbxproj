@@ -117,6 +117,7 @@
 		4C3B45A322EE53AC0040C2C4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				4C8ECFE322F7834300100FD8 /* Transaction History */,
 				F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */,
 				4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */,
 				4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */,
@@ -166,13 +167,20 @@
 			path = Ded;
 			sourceTree = "<group>";
 		};
+		4C8ECFE322F7834300100FD8 /* Transaction History */ = {
+			isa = PBXGroup;
+			children = (
+				4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */,
+				4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */,
+				4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */,
+			);
+			path = "Transaction History";
+			sourceTree = "<group>";
+		};
 		F1F8BD2222DD829C00075D33 = {
 			isa = PBXGroup;
 			children = (
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
-				4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */,
-				4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */,
-				4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
 				F1F8BD4D22DD82A300075D33 /* KronaUITests */,
@@ -198,8 +206,8 @@
 				4C3B45A522EE53DB0040C2C4 /* Referrals */,
 				4C3B45A422EE53CD0040C2C4 /* Feed */,
 				4C3B45A322EE53AC0040C2C4 /* Settings */,
-				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
+				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F19078D822E9543500101213 /* defaultRestImage.png */,
 				F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */,
 				F1F8BD3A22DD82A300075D33 /* Info.plist */,
