@@ -14,7 +14,7 @@ class Restaurant
     var icon: UIImage?
     var isFavorite:Bool
     
-    init (name:String, icon:UIImage, isFavorite:Bool){
+    init (name:String, icon:UIImage, isFavorite:Bool) {
         self.name = name
         self.icon = icon
         self.isFavorite = isFavorite

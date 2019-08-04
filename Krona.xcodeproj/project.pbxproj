@@ -11,6 +11,9 @@
 		4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */; };
 		4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */; };
 		4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */; };
+		4C8ECFDE22F67FD600100FD8 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */; };
+		4C8ECFE022F6803B00100FD8 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */; };
+		4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */; };
 		BA04709622F3D7ED00446C39 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709522F3D7ED00446C39 /* Post.swift */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
@@ -55,6 +58,9 @@
 		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		BA04709522F3D7ED00446C39 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
+				4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */,
+				4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */,
+				4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
 				F1F8BD4D22DD82A300075D33 /* KronaUITests */,
@@ -348,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8ECFDE22F67FD600100FD8 /* HistoryTableViewController.swift in Sources */,
 				BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */,
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */,
@@ -361,6 +371,8 @@
 				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
 				F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */,
 				25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */,
+				4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */,
+				4C8ECFE022F6803B00100FD8 /* HistoryTableViewCell.swift in Sources */,
 				F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */,
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
 				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,

@@ -23,6 +23,24 @@ class ProfileTableViewController: UITableViewController {
         configureUI()
     }
     
+    //MARK: IBAction
+
+    @IBAction func didTapFacebook(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "http://www.facebook.com/officialkrona/")!)
+    }
+    
+    @IBAction func didTapInstagram(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://www.instagram.com/officialkrona/")!)
+    }
+    
+    @IBAction func didTapTwitter(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://twitter.com/kronaofficial")!)
+    }
+    
+    @IBAction func didTapDonate(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://www.paypal.com/donate/?token=a2t0dPo1_bBqJoO4SYm56YI1bwWn4JW93uTB3liO8B43QJZsbY4mx4vZdvjY6yq_C_EZM0&fromUL=true&country.x=US&locale.x=en_US")!)
+    }
+    
     //MARK: Helper Functions
     
     func configureTableView() {
@@ -38,8 +56,8 @@ class ProfileTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
-        navigationItem.title = "Settings"
+        navigationController?.navigationBar.barTintColor = UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1)
+        navigationItem.title = "Profile"
     }
  /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

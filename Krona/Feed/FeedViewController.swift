@@ -104,10 +104,8 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        print(collectionView.tag)
-        var num = collectionView.tag
 
-        if num == 0
+        if collectionView.tag == 0
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
@@ -115,7 +113,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.setAttributes(post: post)
             return cell
         }
-        else if num == 1
+        else if collectionView.tag == 1
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopIconsCollectionViewCell", for: indexPath) as! ShopIconsCollectionViewCell
