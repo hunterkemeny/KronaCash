@@ -34,9 +34,20 @@ class VisitedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
         loadRestaurants()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    func configureUI() {
+        
+        //TODO: Fix Colors and style
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1)
+        navigationItem.title = "Visited"
     }
     
     private func loadRestaurants() {
