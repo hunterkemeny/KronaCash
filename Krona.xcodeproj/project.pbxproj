@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251B4DBD22F78F630085BB76 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B4DBC22F78F630085BB76 /* Business.swift */; };
+		251B4DBF22F7922F0085BB76 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B4DBE22F7922F0085BB76 /* Deal.swift */; };
+		251B4DC122F792EB0085BB76 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B4DC022F792EB0085BB76 /* Reward.swift */; };
 		25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */; };
 		4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */; };
 		4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */; };
@@ -54,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		251B4DBC22F78F630085BB76 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Business.swift; path = Krona/Business.swift; sourceTree = SOURCE_ROOT; };
+		251B4DBE22F7922F0085BB76 /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		251B4DC022F792EB0085BB76 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitedViewController.swift; sourceTree = "<group>"; };
 		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
@@ -201,6 +207,9 @@
 		F1F8BD2D22DD829C00075D33 /* Krona */ = {
 			isa = PBXGroup;
 			children = (
+				251B4DBC22F78F630085BB76 /* Business.swift */,
+				251B4DBE22F7922F0085BB76 /* Deal.swift */,
+				251B4DC022F792EB0085BB76 /* Reward.swift */,
 				4C3B45AF22EF64B00040C2C4 /* Ded */,
 				4C3B45A622EE53E90040C2C4 /* Visited */,
 				4C3B45A522EE53DB0040C2C4 /* Referrals */,
@@ -369,8 +378,10 @@
 				BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */,
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */,
+				251B4DC122F792EB0085BB76 /* Reward.swift in Sources */,
 				BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */,
 				BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */,
+				251B4DBF22F7922F0085BB76 /* Deal.swift in Sources */,
 				BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */,
 				4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */,
 				BA04709622F3D7ED00446C39 /* Post.swift in Sources */,
@@ -384,6 +395,7 @@
 				F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */,
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
 				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,
+				251B4DBD22F78F630085BB76 /* Business.swift in Sources */,
 				BA25871F22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift in Sources */,
 				4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */,
 			);
