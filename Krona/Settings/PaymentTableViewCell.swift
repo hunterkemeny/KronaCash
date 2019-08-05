@@ -1,15 +1,20 @@
 //
-//  ProfileTableViewCell.swift
+//  PaymentTableViewCell.swift
 //  Krona
 //
-//  Created by Alek  Kemeny on 7/18/19.
+//  Created by Hunter Kemeny on 8/4/19.
 //  Copyright © 2019 Krona Technologies Incorporated. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewCell: UITableViewCell {
-    @IBOutlet weak var nameLabel: UILabel!
+class PaymentTableViewCell: UITableViewCell {
+
+    
+    func setAttributes(payment: Payment){
+        visitedLabel.text = restaurant.name
+        restaurantPicture.image = restaurant.icon
+    }
     
     
     override func awakeFromNib() {
