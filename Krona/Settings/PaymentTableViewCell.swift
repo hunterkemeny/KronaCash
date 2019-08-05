@@ -12,8 +12,8 @@ class PaymentTableViewCell: UITableViewCell {
 
     
     func setAttributes(payment: Payment){
-        visitedLabel.text = restaurant.name
-        restaurantPicture.image = restaurant.icon
+//        visitedLabel.text = restaurant.name
+//        restaurantPicture.image = restaurant.icon
     }
     
     
