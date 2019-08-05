@@ -11,9 +11,12 @@ import UIKit
 class PaymentTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var cardImage: UIImageView!
+    @IBOutlet weak var cardNumber: UILabel!
+    
     func setAttributes(payment: Payment){
-//        visitedLabel.text = restaurant.name
-//        restaurantPicture.image = restaurant.icon
+        cardNumber.text = payment.cardNum
+        cardImage.image = payment.cardIcon
     }
     
     
