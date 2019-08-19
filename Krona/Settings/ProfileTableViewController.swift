@@ -56,7 +56,7 @@ class ProfileTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 138/255, green: 43/255, blue: 226/255, alpha: 1)
         navigationItem.title = "Profile"
     }
  /*

@@ -14,8 +14,9 @@ class Deal
     var name: String?
     var description: String?
     
-    init()
+    init(name:String, description:String)
     {
-        
+        self.name = name
+        self.description = description
     }
 }

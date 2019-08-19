@@ -10,14 +10,18 @@ import UIKit
 
 class Reward
 {
-    
+    var name: String?
     var progress: Double?
     var total: Double?
     var type: rewardType?
+    var URL: String?
     
-    init()
+    init(name:String, progress:Double, total:Double, type:rewardType)
     {
-        
+        self.name = name
+        self.progress = progress
+        self.total = total
+        self.type = type
     }
 }
 

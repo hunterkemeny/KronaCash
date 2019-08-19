@@ -117,8 +117,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopIconsCollectionViewCell", for: indexPath) as! ShopIconsCollectionViewCell
-            let post = posts[indexPath.row]
-            cell.setAttributes(post: post)
+            cell.setAttributes(post: posts[indexPath.row])
             return cell
         }
         else

@@ -44,9 +44,9 @@ class VisitedViewController: UIViewController {
         
         //TODO: Fix Colors and style
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
         navigationItem.title = "Visited"
     }
     
