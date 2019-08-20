@@ -6,7 +6,6 @@
 //  Copyright © 2019 Krona Technologies Incorporated. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class FeedViewController: UIViewController
@@ -16,17 +15,52 @@ class FeedViewController: UIViewController
     
     var posts = [Post]()
     
+    let feedSearchController = UISearchController(searchResultsController: nil)
+    //let feedSearchBar = UISearchBar()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.definesPresentationContext = true
+        self.feedSearchController.searchBar.delegate = self
+        self.navigationItem.searchController = feedSearchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        
         loadPosts()
         feedTableView.dataSource = self
         feedTableView.delegate = self
     }
     
+    
+    
     func loadPosts()
     {
         posts = Post.fetchPosts()
+    }
+}
+
+extension FeedViewController: UISearchBarDelegate
+{
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)
+    {
+        performSegue(withIdentifier: "feedToSearchSegue", sender: nil)
+    }
+    
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
+    {
+        searchBar.setShowsCancelButton(true, animated: true)
+        return true
+    }
+    
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
+    {
+        searchBar.setShowsCancelButton(false, animated: true)
+        return true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
+    {
+        dismiss(animated: true, completion: nil)
     }
 }
 

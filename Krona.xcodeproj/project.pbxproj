@@ -30,6 +30,10 @@
 		BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871C22F41E79000B80D6 /* ShopIconsTableViewCell.swift */; };
 		BA25871F22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */; };
 		BA25872122F4DFD1000B80D6 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */; };
+		BA5EAB52230B85E50035B624 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */; };
+		BA5EAB54230B8C0A0035B624 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */; };
+		BA5EAB56230B96480035B624 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */; };
+		BA5EAB58230B973E0035B624 /* TutorialContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */; };
 		F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */; };
 		F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */; };
 		F19078D922E9543500101213 /* defaultRestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F19078D822E9543500101213 /* defaultRestImage.png */; };
@@ -86,6 +90,10 @@
 		BA25871C22F41E79000B80D6 /* ShopIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShopIconsTableViewCell.swift; path = ../../ShopIconsTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopIconsCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentViewController.swift; sourceTree = "<group>"; };
 		F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewController.swift; sourceTree = "<group>"; };
 		F19078D822E9543500101213 /* defaultRestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultRestImage.png; sourceTree = "<group>"; };
@@ -243,6 +251,10 @@
 				4C3B45A322EE53AC0040C2C4 /* Settings */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
+				BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */,
+				BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */,
+				BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */,
+				BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */,
 				F19078D822E9543500101213 /* defaultRestImage.png */,
 				F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */,
 				F1F8BD3A22DD82A300075D33 /* Info.plist */,
@@ -407,16 +419,19 @@
 				F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */,
 				25F39E3323065A5200A46381 /* RewardCell.swift in Sources */,
 				4C164A6D22F7BD3300C0733E /* PaymentTableViewController.swift in Sources */,
+				BA5EAB58230B973E0035B624 /* TutorialContentViewController.swift in Sources */,
 				251B4DC122F792EB0085BB76 /* Reward.swift in Sources */,
 				BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */,
 				BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */,
 				251B4DBF22F7922F0085BB76 /* Deal.swift in Sources */,
 				BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */,
 				4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */,
+				BA5EAB52230B85E50035B624 /* OnboardingViewController.swift in Sources */,
 				BA04709622F3D7ED00446C39 /* Post.swift in Sources */,
 				BA25872122F4DFD1000B80D6 /* PostCollectionViewCell.swift in Sources */,
 				4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */,
 				F1EEDD5022E93E3D00DEC2E6 /* Restaurant.swift in Sources */,
+				BA5EAB54230B8C0A0035B624 /* TutorialViewController.swift in Sources */,
 				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
 				F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */,
 				25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */,
@@ -426,6 +441,7 @@
 				F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */,
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
 				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,
+				BA5EAB56230B96480035B624 /* TutorialPageViewController.swift in Sources */,
 				251B4DBD22F78F630085BB76 /* Business.swift in Sources */,
 				BA25871F22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift in Sources */,
 				25F39E2D2306588700A46381 /* BusinessPage.swift in Sources */,
