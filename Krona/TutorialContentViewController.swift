@@ -10,12 +10,36 @@ import UIKit
 
 class TutorialContentViewController: UIViewController
 {
+    @IBOutlet var headingLabel: UILabel!
+    {
+        didSet
+        {
+            headingLabel.numberOfLines = 0
+        }
+    }
+    
+    @IBOutlet var subheadingLabel: UILabel!
+    {
+        didSet
+        {
+            subheadingLabel.numberOfLines = 0
+        }
+    }
+    
+    @IBOutlet var contentImageView: UIImageView!
+    
+    var index = 0
+    var heading = ""
+    var subheading = ""
+    var imageFile = ""
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        headingLabel.text = heading
+        subheadingLabel.text = subheading
+        contentImageView.image = UIImage(named: imageFile)
     }
     
 

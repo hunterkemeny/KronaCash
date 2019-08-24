@@ -8,16 +8,101 @@
 
 import UIKit
 
-class TutorialPageViewController: UIPageViewController
+protocol TutorialPageViewControllerDelegate: class
 {
+    func didUpdatePageIndex(currentIndex: Int)
+}
+
+class TutorialPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate
+{
+    weak var tutorialDelegate: TutorialPageViewControllerDelegate?
+    
+    var pageHeadings = ["Browse the Latest Offers",
+                        "Explore Your Favorites",
+                        "Refer Your Friends",
+                        "View Your Profile Settings"]
+    
+    var pageImages = ["Feed Mockup",
+                      "Visited-100",
+                      "Screen Shot 2019-08-20 at 6.12.59 PM",
+                      "Screen Shot 2019-08-20 at 6.13.22 PM"]
+    
+    var pageSubheadings = ["Get the latest on nearby offers that have been personalized for you.",
+                           "Explore the latest offers from your favorites.",
+                           "Refer a friend and we'll add <dope shit> to both of your accounts.",
+                           "Manage your Krona profile and settings."]
+    
+    var currentIndex = 0
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        dataSource = self
+        delegate = self
+        // create first tutorial screen
+        if let startingViewController = contentViewController(at: 0)
+        {
+            setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        var index = (viewController as! TutorialContentViewController).index
+        index -= 1
+        
+        return contentViewController(at: index)
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+    {
+        var index = (viewController as! TutorialContentViewController).index
+        index += 1
+        
+        return contentViewController(at: index)
+    }
+    
+    func contentViewController(at index: Int) -> TutorialContentViewController?
+    {
+        if index < 0 || index >= pageHeadings.count
+        {
+            return nil
+        }
+        
+        // Create a new view controller and pass suitable data
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "TutorialContentViewController") as? TutorialContentViewController
+        {
+            pageContentViewController.heading = pageHeadings[index]
+            pageContentViewController.imageFile = pageImages[index]
+            pageContentViewController.subheading = pageSubheadings[index]
+            pageContentViewController.index = index
+            
+            return pageContentViewController
+        }
+        return nil
+    }
+    
+    func forwardPage()
+    {
+        currentIndex += 1
+        if let nextViewController = contentViewController(at: currentIndex)
+        {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
+    {
+        if completed
+        {
+            if let contentViewController = pageViewController.viewControllers?.first as? TutorialContentViewController
+            {
+                currentIndex = contentViewController.index
+                tutorialDelegate?.didUpdatePageIndex(currentIndex: currentIndex)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
