@@ -10,6 +10,7 @@
 		251B4DBD22F78F630085BB76 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B4DBC22F78F630085BB76 /* Business.swift */; };
 		251B4DBF22F7922F0085BB76 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B4DBE22F7922F0085BB76 /* Deal.swift */; };
 		251B4DC122F792EB0085BB76 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B4DC022F792EB0085BB76 /* Reward.swift */; };
+		258CC31823120A170011EF9A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258CC31723120A170011EF9A /* List.swift */; };
 		25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */; };
 		25DE4C13230B158F00635251 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE4C12230B158F00635251 /* DealCell.swift */; };
 		25F39E2D2306588700A46381 /* BusinessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F39E2C2306588700A46381 /* BusinessPage.swift */; };
@@ -23,7 +24,6 @@
 		4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */; };
 		4C8ECFE722F7905900100FD8 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE622F7905900100FD8 /* Payment.swift */; };
 		4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */; };
-		BA04709622F3D7ED00446C39 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709522F3D7ED00446C39 /* Post.swift */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
 		BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */; };
@@ -37,7 +37,6 @@
 		F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */; };
 		F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */; };
 		F19078D922E9543500101213 /* defaultRestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F19078D822E9543500101213 /* defaultRestImage.png */; };
-		F1EEDD5022E93E3D00DEC2E6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */; };
 		F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */; };
 		F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */; };
 		F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8BD3022DD829C00075D33 /* FeedViewController.swift */; };
@@ -67,12 +66,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		251B4DBC22F78F630085BB76 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Business.swift; path = Krona/Business.swift; sourceTree = SOURCE_ROOT; };
+		251B4DBC22F78F630085BB76 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Business.swift; path = "Krona/High Level/Business.swift"; sourceTree = SOURCE_ROOT; };
 		251B4DBE22F7922F0085BB76 /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 		251B4DC022F792EB0085BB76 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		258CC31723120A170011EF9A /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitedViewController.swift; sourceTree = "<group>"; };
 		25DE4C12230B158F00635251 /* DealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
-		25F39E2C2306588700A46381 /* BusinessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessPage.swift; path = Krona/BusinessPage.swift; sourceTree = SOURCE_ROOT; };
+		25F39E2C2306588700A46381 /* BusinessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessPage.swift; path = "Krona/Business Page/BusinessPage.swift"; sourceTree = SOURCE_ROOT; };
 		25F39E3223065A5200A46381 /* RewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCell.swift; sourceTree = "<group>"; };
 		4C164A6C22F7BD3300C0733E /* PaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewController.swift; sourceTree = "<group>"; };
 		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 		4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		4C8ECFE622F7905900100FD8 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
-		BA04709522F3D7ED00446C39 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EatIconsCollectionViewCell.swift; path = ../../EatIconsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 		F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewController.swift; sourceTree = "<group>"; };
 		F19078D822E9543500101213 /* defaultRestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultRestImage.png; sourceTree = "<group>"; };
-		F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		F1F8BD2B22DD829C00075D33 /* Krona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +138,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		258CC31923120C5F0011EF9A /* High Level */ = {
+			isa = PBXGroup;
+			children = (
+				258CC31723120A170011EF9A /* List.swift */,
+				251B4DBC22F78F630085BB76 /* Business.swift */,
+				251B4DBE22F7922F0085BB76 /* Deal.swift */,
+				251B4DC022F792EB0085BB76 /* Reward.swift */,
+			);
+			path = "High Level";
+			sourceTree = "<group>";
+		};
+		258CC31A23120C7E0011EF9A /* Business Page */ = {
+			isa = PBXGroup;
+			children = (
+				25DE4C12230B158F00635251 /* DealCell.swift */,
+				25F39E2C2306588700A46381 /* BusinessPage.swift */,
+				25F39E3223065A5200A46381 /* RewardCell.swift */,
+			);
+			path = "Business Page";
+			sourceTree = "<group>";
+		};
 		4C164A6B22F7BAAB00C0733E /* Payment */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +191,6 @@
 				BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */,
 				BA04709722F3D89C00446C39 /* PostTableViewCell.swift */,
 				BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */,
-				BA04709522F3D7ED00446C39 /* Post.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -190,7 +208,6 @@
 			children = (
 				25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */,
 				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
-				F1EEDD4F22E93E3D00DEC2E6 /* Restaurant.swift */,
 			);
 			path = Visited;
 			sourceTree = "<group>";
@@ -238,12 +255,8 @@
 		F1F8BD2D22DD829C00075D33 /* Krona */ = {
 			isa = PBXGroup;
 			children = (
-				25DE4C12230B158F00635251 /* DealCell.swift */,
-				251B4DBC22F78F630085BB76 /* Business.swift */,
-				251B4DBE22F7922F0085BB76 /* Deal.swift */,
-				251B4DC022F792EB0085BB76 /* Reward.swift */,
-				25F39E2C2306588700A46381 /* BusinessPage.swift */,
-				25F39E3223065A5200A46381 /* RewardCell.swift */,
+				258CC31A23120C7E0011EF9A /* Business Page */,
+				258CC31923120C5F0011EF9A /* High Level */,
 				4C3B45AF22EF64B00040C2C4 /* Ded */,
 				4C3B45A622EE53E90040C2C4 /* Visited */,
 				4C3B45A522EE53DB0040C2C4 /* Referrals */,
@@ -427,13 +440,12 @@
 				BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */,
 				4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */,
 				BA5EAB52230B85E50035B624 /* OnboardingViewController.swift in Sources */,
-				BA04709622F3D7ED00446C39 /* Post.swift in Sources */,
 				BA25872122F4DFD1000B80D6 /* PostCollectionViewCell.swift in Sources */,
 				4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */,
-				F1EEDD5022E93E3D00DEC2E6 /* Restaurant.swift in Sources */,
 				BA5EAB54230B8C0A0035B624 /* TutorialViewController.swift in Sources */,
 				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
 				F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */,
+				258CC31823120A170011EF9A /* List.swift in Sources */,
 				25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */,
 				4C8ECFE722F7905900100FD8 /* Payment.swift in Sources */,
 				4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */,

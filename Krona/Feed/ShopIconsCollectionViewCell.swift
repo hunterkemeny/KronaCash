@@ -12,8 +12,8 @@ class ShopIconsCollectionViewCell: UICollectionViewCell
 {
     @IBOutlet weak var companyIcon: UIImageView!
     
-    func setAttributes(post: Post)
+    func setAttributes(biz: Business)
     {
-        companyIcon.image = post.createdBy.iconImage
+        companyIcon.image = biz.icon
     }
 }

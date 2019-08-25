@@ -16,13 +16,24 @@ class PostCollectionViewCell: UICollectionViewCell
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var classification: UILabel!
     
-    func setAttributes(post: Post)
+    func setAttributes(biz: Business)
     {
-        companyIcon.image = post.createdBy.iconImage
-        companyName.text = post.createdBy.companyName
-        postImageView.image = post.image
-        distanceLabel.text = "\(post.distance!) mi"
-        classification.text = post.classify
+        companyIcon.image = biz.icon
+        companyName.text = biz.name
+        distanceLabel.text = "\(biz.distance!) mi"
+        var classtxt = ""
+        if biz.classification == .sponsored
+        {
+           classtxt = "Sponsored Content"
+        }
+        
+        else
+        {
+            classtxt = "For You"
+        }
+        classification.text = classtxt
+        
+        postImageView.image = biz.deals[0].image
     }
     
 }

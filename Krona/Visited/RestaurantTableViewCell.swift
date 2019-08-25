@@ -9,19 +9,16 @@
 import UIKit
 
 class RestaurantTableViewCell: UITableViewCell {
-   
-    //MARK: Properties
 
     @IBOutlet weak var visitedLabel: UILabel!
     @IBOutlet weak var restaurantPicture: UIImageView!
     
-    func setAttributes(restaurant:Restaurant){
-        visitedLabel.text = restaurant.name
-        restaurantPicture.image = restaurant.icon
+    func setAttributes(biz: Business){
+        visitedLabel.text = biz.name
+        restaurantPicture.image = biz.icon
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 }

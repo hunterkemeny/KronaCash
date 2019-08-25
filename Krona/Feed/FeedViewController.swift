@@ -11,9 +11,12 @@ import UIKit
 class FeedViewController: UIViewController
 {
     
+    //THIS IS WHERE THE GOD-LIST IS CREATED
+    var Initializer = List()
+    var list = [Business]()
+    
     @IBOutlet weak var feedTableView: UITableView!
     
-    var posts = [Post]()
     
     let feedSearchController = UISearchController(searchResultsController: nil)
     //let feedSearchBar = UISearchBar()
@@ -25,18 +28,12 @@ class FeedViewController: UIViewController
         self.feedSearchController.searchBar.delegate = self
         self.navigationItem.searchController = feedSearchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
-        
-        loadPosts()
+        list = Initializer.getList()
         feedTableView.dataSource = self
         feedTableView.delegate = self
     }
     
-    
-    
-    func loadPosts()
-    {
-        posts = Post.fetchPosts()
-    }
+
 }
 
 extension FeedViewController: UISearchBarDelegate
@@ -73,7 +70,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return posts.count + 2 // for icons scroll at top
+        return list.count + 2 // for icons scroll at top
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -94,8 +91,8 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
         else
         {
             let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
-            let post = posts[indexPath.row - 2]
-            cell.setAttributes(post: post)
+            let biz = list[indexPath.row - 2]
+            cell.setAttributes(biz: biz)
             return cell
         }
         
@@ -133,7 +130,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return posts.count
+        return list.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
@@ -143,23 +140,21 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
-            let post = posts[indexPath.row]
-            cell.setAttributes(post: post)
+            cell.setAttributes(biz: list[indexPath.row])
             return cell
         }
         else if collectionView.tag == 1
         {
             // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopIconsCollectionViewCell", for: indexPath) as! ShopIconsCollectionViewCell
-            cell.setAttributes(post: posts[indexPath.row])
+            cell.setAttributes(biz: list[indexPath.row])
             return cell
         }
         else
         {
             // never goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
-            let post = posts[indexPath.row]
-            cell.setAttributes(post: post)
+            cell.setAttributes(biz: list[indexPath.row])
             return cell
         }
     }
