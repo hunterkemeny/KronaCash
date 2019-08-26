@@ -15,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FeedViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDZ-uL-Hej">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8h3-tk-Ghk">
                                         <rect key="frame" x="10" y="10" width="394" height="800"/>
@@ -617,7 +617,7 @@
             <objects>
                 <viewController id="7UF-jF-4TZ" customClass="BusinessPage" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kDi-AB-Cfq" customClass="UIActionSheet">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jhb-cH-tHO">
@@ -718,7 +718,7 @@
             <objects>
                 <viewController storyboardIdentifier="VisitedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LKs-MQ-bWv" customClass="VisitedViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qte-4M-mPL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-lL-oyp">
@@ -785,9 +785,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zIR-zO-qxz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fKB-D6-NzM">
-                        <barButtonItem key="leftBarButtonItem" title="Profile" id="S9g-n7-02E"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="fKB-D6-NzM"/>
                     <connections>
                         <outlet property="tableView" destination="y8O-yl-5OK" id="yzB-R7-Y0c"/>
                     </connections>
@@ -801,7 +799,7 @@
             <objects>
                 <tableViewController id="7l7-sp-t9E" customClass="ProfileTableViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4hJ-Di-RM7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
@@ -1092,7 +1090,7 @@
             <objects>
                 <tableViewController id="2U5-hN-kcB" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nLe-1e-FKT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
@@ -1186,7 +1184,7 @@
             <objects>
                 <tableViewController id="gar-wj-kvP" customClass="PaymentTableViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OKJ-b0-rJh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -1231,7 +1229,7 @@
             <objects>
                 <viewController id="dw8-TG-xci" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mt6-C9-Tfs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Membership information coming soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-zW-X2d">
@@ -1255,7 +1253,7 @@
             <objects>
                 <tableViewController id="N44-Ja-4o4" customClass="HistoryTableViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yZk-R3-dHG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -1307,16 +1305,16 @@
             </objects>
             <point key="canvasLocation" x="2567" y="839"/>
         </scene>
-        <!--Refer-->
+        <!--Referrals View Controller-->
         <scene sceneID="2hO-Cf-wsd">
             <objects>
                 <viewController storyboardIdentifier="ReferralsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaJ-G4-OD5" customClass="ReferralsViewController" customModule="Krona" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bhn-FE-rfO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Referal page coming soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-U1-npK">
-                                <rect key="frame" x="57" y="432" width="301" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Referral page coming soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-U1-npK">
+                                <rect key="frame" x="57" y="432" width="309" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -1326,7 +1324,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="364-C2-mlm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Refer" id="WXQ-VM-jdS"/>
+                    <tabBarItem key="tabBarItem" title="" image="refIcon" selectedImage="refIconS" id="WXQ-VM-jdS"/>
                     <navigationItem key="navigationItem" id="r3U-Ou-Iv5">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="0Bi-dD-YN0"/>
                     </navigationItem>
@@ -1779,11 +1777,13 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ijx-09-uC3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xxm-mT-vjH">
+                    <tabBar key="tabBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="xxm-mT-vjH">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.41960784313725491" green="0.12156862745098039" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.41960784309999999" green="0.1215686275" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.41960784309999999" green="0.1215686275" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.41960784309999999" green="0.1215686275" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="95F-wp-Ubh" kind="relationship" relationship="viewControllers" id="KAi-Sf-ENv"/>
@@ -1796,11 +1796,11 @@
             </objects>
             <point key="canvasLocation" x="-228" y="977"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="4HN-le-msn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kez-jy-Lq7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="19B-Zt-SXd"/>
+                    <tabBarItem key="tabBarItem" title="" image="settingIcon" selectedImage="settingIconS" id="19B-Zt-SXd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7l8-4L-WmT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1815,11 +1815,13 @@
             </objects>
             <point key="canvasLocation" x="702.89855072463774" y="2240.625"/>
         </scene>
-        <!--Feed-->
+        <!--Navigation Controller-->
         <scene sceneID="ypg-Gg-0sY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="95F-wp-Ubh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" id="P5T-bB-w4d"/>
+                    <tabBarItem key="tabBarItem" title="" image="feedIcon" selectedImage="feedIconS" id="P5T-bB-w4d">
+                        <inset key="imageInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DW2-H2-ZLl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1834,11 +1836,13 @@
             </objects>
             <point key="canvasLocation" x="702.89855072463774" y="137.94642857142856"/>
         </scene>
-        <!--Visited-->
+        <!--Navigation Controller-->
         <scene sceneID="NAE-9Q-puf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BB7-zQ-aBi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Visited" id="AVk-kF-qVd"/>
+                    <tabBarItem key="tabBarItem" title="" image="favIcon" selectedImage="favIconS" id="AVk-kF-qVd">
+                        <color key="badgeColor" red="0.41960784309999999" green="0.1215686275" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u8N-IX-5qs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1858,6 +1862,14 @@
         <image name="Artboard 1-100" width="2000" height="2000"/>
         <image name="Screen Shot 2019-08-19 at 7.51.44 PM" width="468" height="150"/>
         <image name="defaultRestImage.png" width="512" height="512"/>
+        <image name="favIcon" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="favIconS" width="25" height="25"/>
+        <image name="feedIcon" width="25.666666030883789" height="31.666666030883789"/>
+        <image name="feedIconS" width="25.333333969116211" height="31.333333969116211"/>
+        <image name="refIcon" width="25" height="25"/>
+        <image name="refIconS" width="25" height="25.333333969116211"/>
+        <image name="settingIcon" width="25" height="25"/>
+        <image name="settingIconS" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LfH-0S-EUG"/>
