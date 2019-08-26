@@ -16,6 +16,12 @@ class RestaurantTableViewCell: UITableViewCell {
     func setAttributes(biz: Business){
         visitedLabel.text = biz.name
         restaurantPicture.image = biz.icon
+        
+        //Image View setup
+        restaurantPicture.layer.borderWidth = 0
+        restaurantPicture.layer.masksToBounds = false
+        restaurantPicture.layer.cornerRadius = restaurantPicture.frame.height/3
+        restaurantPicture.clipsToBounds = true
     }
     
     override func awakeFromNib() {
