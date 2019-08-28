@@ -10,16 +10,12 @@ import UIKit
 
 class FeedViewController: UIViewController
 {
-    
     //THIS IS WHERE THE GOD-LIST IS CREATED
-    var Initializer = List()
     var list = [Business]()
     
     @IBOutlet weak var feedTableView: UITableView!
     
-    
     let feedSearchController = UISearchController(searchResultsController: nil)
-    //let feedSearchBar = UISearchBar()
     
     override func viewDidLoad()
     {
@@ -28,11 +24,10 @@ class FeedViewController: UIViewController
         self.feedSearchController.searchBar.delegate = self
         self.navigationItem.searchController = feedSearchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
-        list = Initializer.getList()
+        list = List.getList()
         feedTableView.dataSource = self
         feedTableView.delegate = self
     }
-    
 
 }
 
@@ -100,8 +95,6 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
-    //    print(indexPath.row)
-
         if indexPath.row == 0
         {
             if let cell = cell as? EatIconsTableViewCell

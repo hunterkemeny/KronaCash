@@ -12,7 +12,8 @@ class VisitedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var favoriteList  = [Business]()
+    var fullList = [Business]()
+    var favoriteList = [Business]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +35,14 @@ class VisitedViewController: UIViewController {
     
     private func loadBusinesses()
     {
-        let x  = List()
-        let fullList = x.getList()
+        let fullList = List.getList()
+        
         for biz in fullList
         {
             if biz.isFavorite == true
-                {
-                    favoriteList += [biz]
-                }
+            {
+                favoriteList += [biz]
+            }
         }
     }
 }

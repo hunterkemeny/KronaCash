@@ -20,14 +20,14 @@ class Business
     var classification: Classification?
     var category: String?
     
-    init (name:String, icon:UIImage, distance: Double, category:String, classification: Classification)
+    init (name: String, icon: UIImage, distance: Double, category: String, classification: Classification)
     {
         self.name = name
         self.icon = icon
         self.distance = distance
         self.category = category
         self.classification = classification
-        self.isFavorite = true
+        self.isFavorite = false // changed from true
     }
     
     func addDeal(deal: Deal)
@@ -41,7 +41,8 @@ class Business
     }
 }
 
-enum Classification{
+enum Classification
+{
     case sponsored
     case suggested
 }

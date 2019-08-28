@@ -24,6 +24,8 @@
 		4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */; };
 		4C8ECFE722F7905900100FD8 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE622F7905900100FD8 /* Payment.swift */; };
 		4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */; };
+		7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326A23149EEF00F327C8 /* FavoritesViewController.swift */; };
+		7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
 		BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */; };
@@ -83,6 +85,8 @@
 		4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		4C8ECFE622F7905900100FD8 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		7917326A23149EEF00F327C8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EatIconsCollectionViewCell.swift; path = ../../EatIconsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -231,10 +235,32 @@
 			path = "Transaction History";
 			sourceTree = "<group>";
 		};
+		79F535E323149AA100C6A599 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */,
+				7917326A23149EEF00F327C8 /* FavoritesViewController.swift */,
+				7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */,
+				79F535E423149AB600C6A599 /* Tutorial */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		79F535E423149AB600C6A599 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */,
+				BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */,
+				BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 		F1F8BD2222DD829C00075D33 = {
 			isa = PBXGroup;
 			children = (
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
+				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
 				F1F8BD4D22DD82A300075D33 /* KronaUITests */,
@@ -261,13 +287,9 @@
 				4C3B45A622EE53E90040C2C4 /* Visited */,
 				4C3B45A522EE53DB0040C2C4 /* Referrals */,
 				4C3B45A422EE53CD0040C2C4 /* Feed */,
+				79F535E323149AA100C6A599 /* Onboarding */,
 				4C3B45A322EE53AC0040C2C4 /* Settings */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
-				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
-				BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */,
-				BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */,
-				BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */,
-				BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */,
 				F19078D822E9543500101213 /* defaultRestImage.png */,
 				F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */,
 				F1F8BD3A22DD82A300075D33 /* Info.plist */,
@@ -433,6 +455,7 @@
 				25F39E3323065A5200A46381 /* RewardCell.swift in Sources */,
 				4C164A6D22F7BD3300C0733E /* PaymentTableViewController.swift in Sources */,
 				BA5EAB58230B973E0035B624 /* TutorialContentViewController.swift in Sources */,
+				7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */,
 				251B4DC122F792EB0085BB76 /* Reward.swift in Sources */,
 				BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */,
 				BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */,
@@ -444,6 +467,7 @@
 				4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */,
 				BA5EAB54230B8C0A0035B624 /* TutorialViewController.swift in Sources */,
 				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
+				7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */,
 				F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */,
 				258CC31823120A170011EF9A /* List.swift in Sources */,
 				25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */,

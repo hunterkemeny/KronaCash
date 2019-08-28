@@ -11,13 +11,13 @@ import UIKit
 class List
 {
     
-    var list = [Business]()
+    static var list = [Business]()
     
-    init(){
+    /*init(){
         loadBusinesses()
-    }
+    }*/
     
-    func loadBusinesses()
+    static func loadBusinesses()
     {
         let chipotle = Business(name: "Chipotle", icon: UIImage(named: "Chipotle")!, distance: 0.3, category: "Deals", classification: .sponsored)
         chipotle.addDeal(deal: Deal(img: UIImage(named: "chipotleDeal")))
@@ -40,8 +40,17 @@ class List
         list.append(walmart)
     }
     
-    func getList() -> [Business]{
-        print(self.list.count)
+    static func getList() -> [Business]{
         return self.list
+    }
+    
+    static func count() -> Int
+    {
+        return list.count
+    }
+    
+    static func getBiz(i: Int) -> Business
+    {
+        return list[i]
     }
 }
