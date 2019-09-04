@@ -10,6 +10,8 @@ import UIKit
 
 class BusinessPage: UIViewController, UICollectionViewDelegate,  UICollectionViewDataSource {
     
+    let dealsSearchController = UISearchController(searchResultsController: nil)
+    
     //COLLECTIONVIEW STUFF
     var dealArray = [Deal(name: "Deal1", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal2", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal3", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal4", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal5", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long.")]
     
@@ -35,10 +37,19 @@ class BusinessPage: UIViewController, UICollectionViewDelegate,  UICollectionVie
         super.viewDidLoad()
         dealsCollectionView.dataSource = self
         dealsCollectionView.delegate = self
+        self.dealsSearchController.searchBar.delegate = self
+        self.navigationItem.searchController = dealsSearchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
         /*rewardTableView.dataSource = self
         rewardTableView.delegate = self*/
 
     }
+}
+
+extension BusinessPage: UISearchBarDelegate
+{
+    
 }
 
 /*//TABLEVIEW STUFF

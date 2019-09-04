@@ -49,8 +49,16 @@ class List
         return list.count
     }
     
-    static func getBiz(i: Int) -> Business
+    static func getFavorites() -> [Business]
     {
-        return list[i]
+        var favList = [Business]()
+        for biz in list
+        {
+            if biz.isFavorite == true
+            {
+                favList.append(biz)
+            }
+        }
+        return favList
     }
 }

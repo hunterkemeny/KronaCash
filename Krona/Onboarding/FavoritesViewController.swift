@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class FavoritesViewController: UIViewController
 {
     var list = [Business]()
+    var favBiz = [Int]()
     
     @IBOutlet weak var favoritesTableView: UITableView!
     
@@ -21,6 +23,57 @@ class FavoritesViewController: UIViewController
         list = List.getList()
         favoritesTableView.dataSource = self
         favoritesTableView.delegate = self
+    }
+    
+    func goToSegue(sender: UIBarButtonItem)
+    {
+        performSegue(withIdentifier: "favoritesToMainSegue", sender: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(true)
+        for i in 0..<list.count
+        {
+            let biz = list[i]
+            if biz.isFavorite == true
+            {
+                favBiz.append(i)
+            }
+        }
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        let context = appDel.persistentContainer.viewContext
+        
+        let request: NSFetchRequest<User> = User.fetchRequest()
+        request.returnsObjectsAsFaults = false // return ref to obj
+        
+        var results: [User]
+        do
+        {
+            try results = context.fetch(request)
+        }
+        catch
+        {
+            fatalError("Failure to fetch: \(error)")
+        }
+        
+        if results.count > 0
+        {
+            for user in results
+            {
+                //let thisUser = user as User
+                user.favList = favBiz
+            }
+        }
+        
+        do
+        {
+            try context.save()
+        }
+        catch
+        {
+            fatalError("Failure to save context: \(error)")
+        }
     }
 }
 

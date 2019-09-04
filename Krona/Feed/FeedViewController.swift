@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FeedViewController: UIViewController
 {
@@ -24,11 +25,12 @@ class FeedViewController: UIViewController
         self.feedSearchController.searchBar.delegate = self
         self.navigationItem.searchController = feedSearchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController?.searchBar.tintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
+        List.loadBusinesses()
         list = List.getList()
         feedTableView.dataSource = self
         feedTableView.delegate = self
     }
-
 }
 
 extension FeedViewController: UISearchBarDelegate
@@ -131,21 +133,18 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
 
         if collectionView.tag == 0
         {
-            // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
             cell.setAttributes(biz: list[indexPath.row])
             return cell
         }
         else if collectionView.tag == 1
         {
-            // goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopIconsCollectionViewCell", for: indexPath) as! ShopIconsCollectionViewCell
             cell.setAttributes(biz: list[indexPath.row])
             return cell
         }
         else
         {
-            // never goes here
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
             cell.setAttributes(biz: list[indexPath.row])
             return cell

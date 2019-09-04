@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class VisitedViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class VisitedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        List.loadBusinesses()
         loadBusinesses()
         tableView.delegate = self
         tableView.dataSource = self
@@ -36,12 +38,30 @@ class VisitedViewController: UIViewController {
     private func loadBusinesses()
     {
         let fullList = List.getList()
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        let context = appDel.persistentContainer.viewContext
         
-        for biz in fullList
+        let request: NSFetchRequest<User> = User.fetchRequest()
+        request.returnsObjectsAsFaults = false // return ref to obj
+        
+        var results: [User]
+        do
         {
-            if biz.isFavorite == true
+            try results = context.fetch(request)
+        }
+        catch
+        {
+            fatalError("Failure to fetch: \(error)")
+        }
+        if results.count > 0
+        {
+            for user in results
             {
-                favoriteList += [biz]
+                let indices = user.favList!
+                for i in indices
+                {
+                    favoriteList.append(fullList[i])
+                }
             }
         }
     }
