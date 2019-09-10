@@ -8,14 +8,36 @@
 
 import UIKit
 
-class BusinessPage: UIViewController, UICollectionViewDelegate,  UICollectionViewDataSource {
+class BusinessPage: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    let dealsSearchController = UISearchController(searchResultsController: nil)
+    @IBOutlet weak var dealsCollectionView: UICollectionView!
+    @IBOutlet weak var rewardTableView: UITableView!
     
-    //COLLECTIONVIEW STUFF
-    var dealArray = [Deal(name: "Deal1", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal2", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal3", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal4", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Deal5", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long.")]
+    // TODO: DEALS EVENTUALLY NEED TO BE PULLED FROM LIST CLASS WHEN BUTTON PROBLEM SOLVED
     
-   /* var rewardArray = [Reward(name: "Reward1", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward2", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward3", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward4", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward5", progress: 30, total: 100, type: .spendGoal)]*/
+    var dealArray = [Deal(name: "Free", description: "This is only a placeholder deal that is beingz used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Buy 1, Get 1 Free", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "10% off", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "First Meal Free", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Appetizer - FREE", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long.")]
+    
+    var currDealArray = [Deal]()
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        List.loadBusinesses()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let searchResults = storyboard.instantiateViewController(withIdentifier: "DealsSearchTableViewController") as! DealsSearchTableViewController
+        let dealsSearchController = UISearchController(searchResultsController: searchResults)
+        dealsSearchController.delegate = searchResults
+        dealsSearchController.searchBar.delegate = searchResults
+        
+        self.definesPresentationContext = true
+        self.navigationItem.searchController = dealsSearchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
+        
+        dealsCollectionView.dataSource = self
+        dealsCollectionView.delegate = self
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dealArray.count
@@ -29,27 +51,12 @@ class BusinessPage: UIViewController, UICollectionViewDelegate,  UICollectionVie
         return cell
     }
     
-    @IBOutlet weak var dealsCollectionView: UICollectionView!
-    @IBOutlet weak var rewardTableView: UITableView!
-    //viewDidLoad
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        dealsCollectionView.dataSource = self
-        dealsCollectionView.delegate = self
-        self.dealsSearchController.searchBar.delegate = self
-        self.navigationItem.searchController = dealsSearchController
-        self.navigationItem.hidesSearchBarWhenScrolling = false
-        self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
-        /*rewardTableView.dataSource = self
-        rewardTableView.delegate = self*/
-
+    public func getDeals() -> [Deal]
+    {
+        return dealArray
     }
-}
-
-extension BusinessPage: UISearchBarDelegate
-{
     
+    /* var rewardArray = [Reward(name: "Reward1", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward2", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward3", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward4", progress: 30, total: 100, type: .spendGoal), Reward(name: "Reward5", progress: 30, total: 100, type: .spendGoal)]*/
 }
 
 /*//TABLEVIEW STUFF

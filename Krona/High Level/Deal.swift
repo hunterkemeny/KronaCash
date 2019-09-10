@@ -29,4 +29,12 @@ class Deal
     init(img: UIImage?){
         self.image = img
     }
+    
+    //TYPE3
+    init(name: String, description: String, img: UIImage?)
+    {
+        self.name = name
+        self.description = description
+        self.image = img
+    }
 }

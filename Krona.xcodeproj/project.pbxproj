@@ -32,6 +32,8 @@
 		7985DB57231F35CF006D2719 /* FeedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */; };
 		7985DB5A231F3688006D2719 /* FeedSearchLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB59231F3688006D2719 /* FeedSearchLabelTableViewCell.swift */; };
 		7985DB5E231F36C5006D2719 /* FeedSearchBizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */; };
+		7985DB61231F4045006D2719 /* DealsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */; };
+		7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
 		BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */; };
@@ -99,6 +101,8 @@
 		7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchTableViewController.swift; sourceTree = "<group>"; };
 		7985DB59231F3688006D2719 /* FeedSearchLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchLabelTableViewCell.swift; sourceTree = "<group>"; };
 		7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchBizTableViewCell.swift; sourceTree = "<group>"; };
+		7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSearchTableViewController.swift; sourceTree = "<group>"; };
+		7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSearchTableViewCell.swift; sourceTree = "<group>"; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EatIconsCollectionViewCell.swift; path = ../../EatIconsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				25DE4C12230B158F00635251 /* DealCell.swift */,
 				25F39E2C2306588700A46381 /* BusinessPage.swift */,
 				25F39E3223065A5200A46381 /* RewardCell.swift */,
+				7985DB5F231F4021006D2719 /* Deals Search */,
 			);
 			path = "Business Page";
 			sourceTree = "<group>";
@@ -258,6 +263,15 @@
 				7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */,
 			);
 			path = "Feed Search";
+			sourceTree = "<group>";
+		};
+		7985DB5F231F4021006D2719 /* Deals Search */ = {
+			isa = PBXGroup;
+			children = (
+				7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */,
+				7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */,
+			);
+			path = "Deals Search";
 			sourceTree = "<group>";
 		};
 		79F535E323149AA100C6A599 /* Onboarding */ = {
@@ -476,6 +490,7 @@
 				4C8ECFDE22F67FD600100FD8 /* HistoryTableViewController.swift in Sources */,
 				BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */,
 				7985DB5A231F3688006D2719 /* FeedSearchLabelTableViewCell.swift in Sources */,
+				7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */,
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				25DE4C13230B158F00635251 /* DealCell.swift in Sources */,
 				F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */,
@@ -511,6 +526,7 @@
 				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,
 				BA5EAB56230B96480035B624 /* TutorialPageViewController.swift in Sources */,
 				251B4DBD22F78F630085BB76 /* Business.swift in Sources */,
+				7985DB61231F4045006D2719 /* DealsSearchTableViewController.swift in Sources */,
 				BA25871F22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift in Sources */,
 				25F39E2D2306588700A46381 /* BusinessPage.swift in Sources */,
 				4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */,
