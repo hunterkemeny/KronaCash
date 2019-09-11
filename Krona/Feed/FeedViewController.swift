@@ -26,8 +26,10 @@ class FeedViewController: UIViewController
         self.navigationItem.searchController = feedSearchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.searchController?.searchBar.tintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
+        self.navigationController?.navigationBar.isTranslucent = true
         List.loadBusinesses()
         list = List.getList()
+        print("len of list: \(list.count)")
         feedTableView.dataSource = self
         feedTableView.delegate = self
     }
@@ -118,6 +120,13 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
                 cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
     }
 }
 

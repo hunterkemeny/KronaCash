@@ -13,9 +13,7 @@ class DealsSearchTableViewController: UITableViewController, UISearchControllerD
     var bp = BusinessPage()
     var dealArray = [Deal]()
     var currDealArray = [Deal]()
-    
-    //var dealsSC: UISearchController!
-    
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -52,15 +50,8 @@ class DealsSearchTableViewController: UITableViewController, UISearchControllerD
             }
             return true
         }
-        
         tableView.reloadData()
     }
-    
-    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)
-    {
-        
-    }
-    
 }
 
 /*extension DealsSearchTableViewController: UISearchBarDelegate

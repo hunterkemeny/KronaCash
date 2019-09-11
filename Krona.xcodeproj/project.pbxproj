@@ -27,6 +27,8 @@
 		7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326A23149EEF00F327C8 /* FavoritesViewController.swift */; };
 		7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */; };
 		791732AD2317403F00F327C8 /* Krona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791732AB2317403F00F327C8 /* Krona.xcdatamodeld */; };
+		794B1E59232871F1002D30C8 /* VisitedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */; };
+		794B1E5B23287541002D30C8 /* VisitedSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */; };
 		7985DB54231F0B07006D2719 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB52231F0B07006D2719 /* User+CoreDataClass.swift */; };
 		7985DB55231F0B07006D2719 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB53231F0B07006D2719 /* User+CoreDataProperties.swift */; };
 		7985DB57231F35CF006D2719 /* FeedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */; };
@@ -96,6 +98,8 @@
 		7917326A23149EEF00F327C8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		791732AC2317403F00F327C8 /* Krona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Krona.xcdatamodel; sourceTree = "<group>"; };
+		794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedSearchTableViewController.swift; sourceTree = "<group>"; };
+		794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedSearchTableViewCell.swift; sourceTree = "<group>"; };
 		7985DB52231F0B07006D2719 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7985DB53231F0B07006D2719 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchTableViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */,
+				794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */,
+				794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */,
 				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
 			);
 			path = Visited;
@@ -503,6 +509,7 @@
 				BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */,
 				251B4DBF22F7922F0085BB76 /* Deal.swift in Sources */,
 				BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */,
+				794B1E5B23287541002D30C8 /* VisitedSearchTableViewCell.swift in Sources */,
 				4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */,
 				BA5EAB52230B85E50035B624 /* OnboardingViewController.swift in Sources */,
 				BA25872122F4DFD1000B80D6 /* PostCollectionViewCell.swift in Sources */,
@@ -521,6 +528,7 @@
 				4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */,
 				7985DB57231F35CF006D2719 /* FeedSearchTableViewController.swift in Sources */,
 				4C8ECFE022F6803B00100FD8 /* HistoryTableViewCell.swift in Sources */,
+				794B1E59232871F1002D30C8 /* VisitedSearchTableViewController.swift in Sources */,
 				F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */,
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
 				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,

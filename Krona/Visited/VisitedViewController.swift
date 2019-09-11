@@ -18,15 +18,27 @@ class VisitedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let searchResults = storyboard.instantiateViewController(withIdentifier: "VisitedSearchTableViewController") as! VisitedSearchTableViewController
+        let visitedSearchController = UISearchController(searchResultsController: searchResults)
+        visitedSearchController.delegate = searchResults
+        visitedSearchController.searchBar.delegate = searchResults
+        visitedSearchController.searchBar.placeholder = "Search stores and restaurants"
+        
+        self.definesPresentationContext = true
+        self.navigationItem.searchController = visitedSearchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
+        
         configureUI()
-        List.loadBusinesses()
+        //List.loadBusinesses()
         loadBusinesses()
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    func configureUI() {
-        
+    func configureUI()
+    {
         //TODO: Fix Colors and style
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.isTranslucent = true
@@ -37,7 +49,8 @@ class VisitedViewController: UIViewController {
     
     private func loadBusinesses()
     {
-        let fullList = List.getList()
+        fullList = List.getList()
+        print("fullList: \(fullList.count)")
         let appDel = UIApplication.shared.delegate as! AppDelegate
         let context = appDel.persistentContainer.viewContext
         
