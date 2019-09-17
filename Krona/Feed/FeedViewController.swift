@@ -21,42 +21,30 @@ class FeedViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.definesPresentationContext = true
-        self.feedSearchController.searchBar.delegate = self
-        self.navigationItem.searchController = feedSearchController
-        self.navigationItem.hidesSearchBarWhenScrolling = false
-        self.navigationItem.searchController?.searchBar.tintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
-        self.navigationController?.navigationBar.isTranslucent = true
+        
         List.loadBusinesses()
         list = List.getList()
-        print("len of list: \(list.count)")
         feedTableView.dataSource = self
         feedTableView.delegate = self
-    }
-}
+        
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
+        feedSearchController.searchResultsController?.view.isHidden = false
 
-extension FeedViewController: UISearchBarDelegate
-{
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)
-    {
-        performSegue(withIdentifier: "feedToSearchSegue", sender: nil)
-    }
-    
-    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
-    {
-        searchBar.setShowsCancelButton(true, animated: true)
-        return true
-    }
-    
-    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
-    {
-        searchBar.setShowsCancelButton(false, animated: true)
-        return true
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
-    {
-        dismiss(animated: true, completion: nil)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let searchResults = storyboard.instantiateViewController(withIdentifier: "FeedSearchTableViewController") as! FeedSearchTableViewController
+        let feedSearchController = UISearchController(searchResultsController: searchResults)
+        feedSearchController.delegate = searchResults
+        feedSearchController.searchBar.delegate = searchResults
+        
+        self.navigationItem.searchController = feedSearchController
+        feedSearchController.searchBar.placeholder = "What are you looking for?"
+        
+        self.definesPresentationContext = true
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
     }
 }
 
@@ -94,7 +82,6 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
             cell.setAttributes(biz: biz)
             return cell
         }
-        
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
@@ -120,13 +107,6 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
                 cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
             }
         }
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
-    {
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor.clear
-        return headerView
     }
 }
 
@@ -160,4 +140,30 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
     }
 }
+
+/*extension FeedViewController: UISearchBarDelegate
+ {
+ func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)
+ {
+ performSegue(withIdentifier: "feedToSearchSegue", sender: nil)
+ }
+ 
+ func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
+ {
+ searchBar.setShowsCancelButton(true, animated: true)
+ return true
+ }
+ 
+ func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
+ {
+ searchBar.setShowsCancelButton(false, animated: true)
+ return true
+ }
+ 
+ func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
+ {
+ dismiss(animated: true, completion: nil)
+ }
+ }*/
+
 

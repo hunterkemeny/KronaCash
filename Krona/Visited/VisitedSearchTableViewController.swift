@@ -10,7 +10,6 @@ import UIKit
 
 class VisitedSearchTableViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate
 {
-    var vvc = VisitedViewController()
     var bizArray = [Business]()
     var currBizArray = [Business]()
     

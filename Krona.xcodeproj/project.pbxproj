@@ -29,6 +29,7 @@
 		791732AD2317403F00F327C8 /* Krona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791732AB2317403F00F327C8 /* Krona.xcdatamodeld */; };
 		794B1E59232871F1002D30C8 /* VisitedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */; };
 		794B1E5B23287541002D30C8 /* VisitedSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */; };
+		794B1E5D2328864C002D30C8 /* FeedSearchDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E5C2328864C002D30C8 /* FeedSearchDealTableViewCell.swift */; };
 		7985DB54231F0B07006D2719 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB52231F0B07006D2719 /* User+CoreDataClass.swift */; };
 		7985DB55231F0B07006D2719 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB53231F0B07006D2719 /* User+CoreDataProperties.swift */; };
 		7985DB57231F35CF006D2719 /* FeedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */; };
@@ -100,6 +101,7 @@
 		791732AC2317403F00F327C8 /* Krona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Krona.xcdatamodel; sourceTree = "<group>"; };
 		794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedSearchTableViewController.swift; sourceTree = "<group>"; };
 		794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedSearchTableViewCell.swift; sourceTree = "<group>"; };
+		794B1E5C2328864C002D30C8 /* FeedSearchDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchDealTableViewCell.swift; sourceTree = "<group>"; };
 		7985DB52231F0B07006D2719 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7985DB53231F0B07006D2719 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchTableViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */,
 				7985DB59231F3688006D2719 /* FeedSearchLabelTableViewCell.swift */,
 				7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */,
+				794B1E5C2328864C002D30C8 /* FeedSearchDealTableViewCell.swift */,
 			);
 			path = "Feed Search";
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				4C8ECFDE22F67FD600100FD8 /* HistoryTableViewController.swift in Sources */,
 				BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */,
 				7985DB5A231F3688006D2719 /* FeedSearchLabelTableViewCell.swift in Sources */,
+				794B1E5D2328864C002D30C8 /* FeedSearchDealTableViewCell.swift in Sources */,
 				7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */,
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				25DE4C13230B158F00635251 /* DealCell.swift in Sources */,

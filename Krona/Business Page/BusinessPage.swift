@@ -27,11 +27,14 @@ class BusinessPage: UIViewController, UICollectionViewDelegate, UICollectionView
         let dealsSearchController = UISearchController(searchResultsController: searchResults)
         dealsSearchController.delegate = searchResults
         dealsSearchController.searchBar.delegate = searchResults
+        dealsSearchController.searchBar.placeholder = "Search deals and offers"
+
         
         self.definesPresentationContext = true
         self.navigationItem.searchController = dealsSearchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
+        
         
         dealsCollectionView.dataSource = self
         dealsCollectionView.delegate = self
