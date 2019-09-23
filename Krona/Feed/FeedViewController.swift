@@ -141,6 +141,8 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 }
 
+// FOR NOW, DO NOT DELETE... MAY BE USEFUL LATER:
+
 /*extension FeedViewController: UISearchBarDelegate
  {
  func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)

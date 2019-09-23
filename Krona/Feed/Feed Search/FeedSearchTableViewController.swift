@@ -21,7 +21,6 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        List.loadBusinesses()
         bizArray = List.getList()
         currBizArray = bizArray
         for biz in bizArray
@@ -32,11 +31,6 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
             }
         }
         currDealArray = dealArray
-
-        /*print(bizArray.count)
-        print(currBizArray.count)
-        print(dealArray.count)
-        print(currDealArray.count)*/
     }
     
     // TODO: Implement suggestion cells when not typing

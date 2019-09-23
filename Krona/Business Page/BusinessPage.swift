@@ -21,7 +21,6 @@ class BusinessPage: UIViewController, UICollectionViewDelegate, UICollectionView
     {
         super.viewDidLoad()
         
-        List.loadBusinesses()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let searchResults = storyboard.instantiateViewController(withIdentifier: "DealsSearchTableViewController") as! DealsSearchTableViewController
         let dealsSearchController = UISearchController(searchResultsController: searchResults)

@@ -31,7 +31,6 @@ class VisitedViewController: UIViewController {
         self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
         
         configureUI()
-        //List.loadBusinesses()
         loadBusinesses()
         tableView.delegate = self
         tableView.dataSource = self

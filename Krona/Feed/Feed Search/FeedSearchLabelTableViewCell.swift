@@ -10,11 +10,11 @@ import UIKit
 
 class FeedSearchLabelTableViewCell: UITableViewCell
 {
-    @IBOutlet private weak var nameLabel: UILabel! {
+    @IBOutlet private weak var nameLabel: UILabel! /*{
         didSet {
             print("nameLabel: \(nameLabel)")
         }
-    }
+    }*/
     
     func setAttributes(name: String)
     {
