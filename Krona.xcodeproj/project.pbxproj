@@ -15,6 +15,8 @@
 		25DE4C13230B158F00635251 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE4C12230B158F00635251 /* DealCell.swift */; };
 		25F39E2D2306588700A46381 /* BusinessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F39E2C2306588700A46381 /* BusinessPage.swift */; };
 		25F39E3323065A5200A46381 /* RewardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F39E3223065A5200A46381 /* RewardCell.swift */; };
+		42554D6B9F2F05BE06817D16 /* Pods_Krona_KronaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408B6906ED5C013EA6E621ED /* Pods_Krona_KronaUITests.framework */; };
+		49C4A4E9587ECD921BB6BA76 /* Pods_Krona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BDC55AC15FC7C13989464 /* Pods_Krona.framework */; };
 		4C164A6D22F7BD3300C0733E /* PaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C164A6C22F7BD3300C0733E /* PaymentTableViewController.swift */; };
 		4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */; };
 		4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */; };
@@ -37,6 +39,8 @@
 		7985DB5E231F36C5006D2719 /* FeedSearchBizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */; };
 		7985DB61231F4045006D2719 /* DealsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */; };
 		7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */; };
+		79C7EA042339B5B300F46918 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79C7EA032339B5B300F46918 /* GoogleService-Info.plist */; };
+		B7C15DECF5A9F0D63A1635B8 /* Pods_KronaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
 		BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */; };
@@ -87,6 +91,8 @@
 		25DE4C12230B158F00635251 /* DealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
 		25F39E2C2306588700A46381 /* BusinessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessPage.swift; path = "Krona/Business Page/BusinessPage.swift"; sourceTree = SOURCE_ROOT; };
 		25F39E3223065A5200A46381 /* RewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCell.swift; sourceTree = "<group>"; };
+		2D6B9551B8A736AA2468B353 /* Pods-KronaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KronaTests.release.xcconfig"; path = "Target Support Files/Pods-KronaTests/Pods-KronaTests.release.xcconfig"; sourceTree = "<group>"; };
+		408B6906ED5C013EA6E621ED /* Pods_Krona_KronaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krona_KronaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C164A6C22F7BD3300C0733E /* PaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewController.swift; sourceTree = "<group>"; };
 		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 		7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchBizTableViewCell.swift; sourceTree = "<group>"; };
 		7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSearchTableViewController.swift; sourceTree = "<group>"; };
 		7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSearchTableViewCell.swift; sourceTree = "<group>"; };
+		79C7EA032339B5B300F46918 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9176A4681CBC74D779543B70 /* Pods-Krona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona.release.xcconfig"; path = "Target Support Files/Pods-Krona/Pods-Krona.release.xcconfig"; sourceTree = "<group>"; };
+		B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KronaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EatIconsCollectionViewCell.swift; path = ../../EatIconsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -119,6 +128,10 @@
 		BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentViewController.swift; sourceTree = "<group>"; };
+		BD157789B5C95D6DDD4E34E0 /* Pods-Krona-KronaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona-KronaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD66512F3C23E84350AE2648 /* Pods-Krona-KronaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona-KronaUITests.release.xcconfig"; path = "Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D10178092949AEE43D86D412 /* Pods-KronaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KronaTests.debug.xcconfig"; path = "Target Support Files/Pods-KronaTests/Pods-KronaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F03F200F0D043A3428E35739 /* Pods-Krona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona.debug.xcconfig"; path = "Target Support Files/Pods-Krona/Pods-Krona.debug.xcconfig"; sourceTree = "<group>"; };
 		F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewController.swift; sourceTree = "<group>"; };
 		F19078D822E9543500101213 /* defaultRestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultRestImage.png; sourceTree = "<group>"; };
@@ -137,6 +150,7 @@
 		F1F8BD4E22DD82A300075D33 /* KronaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KronaUITests.swift; sourceTree = "<group>"; };
 		F1F8BD5022DD82A300075D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F8BD5C22DD892F00075D33 /* ReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferralsViewController.swift; sourceTree = "<group>"; };
+		F52BDC55AC15FC7C13989464 /* Pods_Krona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krona.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C4A4E9587ECD921BB6BA76 /* Pods_Krona.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C15DECF5A9F0D63A1635B8 /* Pods_KronaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,12 +174,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42554D6B9F2F05BE06817D16 /* Pods_Krona_KronaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C5FAFDD62C302406871C90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F03F200F0D043A3428E35739 /* Pods-Krona.debug.xcconfig */,
+				9176A4681CBC74D779543B70 /* Pods-Krona.release.xcconfig */,
+				BD157789B5C95D6DDD4E34E0 /* Pods-Krona-KronaUITests.debug.xcconfig */,
+				CD66512F3C23E84350AE2648 /* Pods-Krona-KronaUITests.release.xcconfig */,
+				D10178092949AEE43D86D412 /* Pods-KronaTests.debug.xcconfig */,
+				2D6B9551B8A736AA2468B353 /* Pods-KronaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		200760B6BEC7449EA8B2AC2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F52BDC55AC15FC7C13989464 /* Pods_Krona.framework */,
+				408B6906ED5C013EA6E621ED /* Pods_Krona_KronaUITests.framework */,
+				B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		258CC31923120C5F0011EF9A /* High Level */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,12 +349,15 @@
 			isa = PBXGroup;
 			children = (
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
+				79C7EA032339B5B300F46918 /* GoogleService-Info.plist */,
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
 				791732AB2317403F00F327C8 /* Krona.xcdatamodeld */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
 				F1F8BD4D22DD82A300075D33 /* KronaUITests */,
 				F1F8BD2C22DD829C00075D33 /* Products */,
+				09C5FAFDD62C302406871C90 /* Pods */,
+				200760B6BEC7449EA8B2AC2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -371,9 +415,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F8BD5322DD82A300075D33 /* Build configuration list for PBXNativeTarget "Krona" */;
 			buildPhases = (
+				14C3A1884FCF393A4669A5BA /* [CP] Check Pods Manifest.lock */,
 				F1F8BD2722DD829C00075D33 /* Sources */,
 				F1F8BD2822DD829C00075D33 /* Frameworks */,
 				F1F8BD2922DD829C00075D33 /* Resources */,
+				898FA4EA33DCEF1E265EA464 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +434,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F8BD5622DD82A300075D33 /* Build configuration list for PBXNativeTarget "KronaTests" */;
 			buildPhases = (
+				3E25D83CC529C9CC8BDBCE68 /* [CP] Check Pods Manifest.lock */,
 				F1F8BD3B22DD82A300075D33 /* Sources */,
 				F1F8BD3C22DD82A300075D33 /* Frameworks */,
 				F1F8BD3D22DD82A300075D33 /* Resources */,
@@ -406,9 +453,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F8BD5922DD82A300075D33 /* Build configuration list for PBXNativeTarget "KronaUITests" */;
 			buildPhases = (
+				CF57A5675D935D913ABE67F3 /* [CP] Check Pods Manifest.lock */,
 				F1F8BD4622DD82A300075D33 /* Sources */,
 				F1F8BD4722DD82A300075D33 /* Frameworks */,
 				F1F8BD4822DD82A300075D33 /* Resources */,
+				03E0CB4B23438785425B5BFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -470,6 +519,7 @@
 			files = (
 				F1F8BD3922DD82A300075D33 /* LaunchScreen.storyboard in Resources */,
 				F19078D922E9543500101213 /* defaultRestImage.png in Resources */,
+				79C7EA042339B5B300F46918 /* GoogleService-Info.plist in Resources */,
 				F1F8BD3622DD82A300075D33 /* Assets.xcassets in Resources */,
 				F1F8BD3422DD829C00075D33 /* Main.storyboard in Resources */,
 			);
@@ -490,6 +540,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E0CB4B23438785425B5BFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14C3A1884FCF393A4669A5BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Krona-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E25D83CC529C9CC8BDBCE68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KronaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		898FA4EA33DCEF1E265EA464 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona/Pods-Krona-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona/Pods-Krona-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Krona/Pods-Krona-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF57A5675D935D913ABE67F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Krona-KronaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1F8BD2722DD829C00075D33 /* Sources */ = {
@@ -714,6 +867,7 @@
 		};
 		F1F8BD5422DD82A300075D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03F200F0D043A3428E35739 /* Pods-Krona.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -732,6 +886,7 @@
 		};
 		F1F8BD5522DD82A300075D33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9176A4681CBC74D779543B70 /* Pods-Krona.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,6 +905,7 @@
 		};
 		F1F8BD5722DD82A300075D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10178092949AEE43D86D412 /* Pods-KronaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -770,6 +926,7 @@
 		};
 		F1F8BD5822DD82A300075D33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6B9551B8A736AA2468B353 /* Pods-KronaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -790,6 +947,7 @@
 		};
 		F1F8BD5A22DD82A300075D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD157789B5C95D6DDD4E34E0 /* Pods-Krona-KronaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -809,6 +967,7 @@
 		};
 		F1F8BD5B22DD82A300075D33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD66512F3C23E84350AE2648 /* Pods-Krona-KronaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

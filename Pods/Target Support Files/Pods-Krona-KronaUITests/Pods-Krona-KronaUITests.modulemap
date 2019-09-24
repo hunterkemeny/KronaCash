@@ -1,0 +1,6 @@
+framework module Pods_Krona_KronaUITests {
+  umbrella header "Pods-Krona-KronaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

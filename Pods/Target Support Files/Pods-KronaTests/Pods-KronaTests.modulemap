@@ -1,0 +1,6 @@
+framework module Pods_KronaTests {
+  umbrella header "Pods-KronaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
