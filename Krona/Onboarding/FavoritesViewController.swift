@@ -28,6 +28,7 @@ class FavoritesViewController: UIViewController
     func goToSegue(sender: UIBarButtonItem)
     {
         performSegue(withIdentifier: "favoritesToMainSegue", sender: self)
+        self.makeHome()
     }
     
     override func viewWillDisappear(_ animated: Bool)
@@ -74,6 +75,14 @@ class FavoritesViewController: UIViewController
         {
             fatalError("Failure to save context: \(error)")
         }
+    }
+    
+    func makeHome() {
+        
+        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController)
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
     }
 }
 

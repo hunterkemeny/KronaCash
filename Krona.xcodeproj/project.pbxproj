@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,11 @@
 		4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */; };
 		4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */; };
 		4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */; };
+		4C4A987D233D73CC004E7A55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A987C233D73CC004E7A55 /* BaseViewController.swift */; };
+		4C4A987F233D7DCF004E7A55 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A987E233D7DCD004E7A55 /* LoginViewController.swift */; };
+		4C4A9882233DBC6B004E7A55 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A9881233DBC6B004E7A55 /* Constants.swift */; };
+		4C572281233DCE0200EBF012 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C572280233DCE0200EBF012 /* GoogleService-Info.plist */; };
+		4C572283233EA7F300EBF012 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C572282233EA7F300EBF012 /* TabBarController.swift */; };
 		4C8ECFDE22F67FD600100FD8 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */; };
 		4C8ECFE022F6803B00100FD8 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */; };
 		4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */; };
@@ -39,7 +44,6 @@
 		7985DB5E231F36C5006D2719 /* FeedSearchBizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */; };
 		7985DB61231F4045006D2719 /* DealsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */; };
 		7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */; };
-		79C7EA042339B5B300F46918 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79C7EA032339B5B300F46918 /* GoogleService-Info.plist */; };
 		B7C15DECF5A9F0D63A1635B8 /* Pods_KronaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
@@ -97,6 +101,11 @@
 		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		4C4A987C233D73CC004E7A55 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4C4A987E233D7DCD004E7A55 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4C4A9881233DBC6B004E7A55 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C572280233DCE0200EBF012 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C572282233EA7F300EBF012 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4C8ECFDD22F67FD600100FD8 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		4C8ECFDF22F6803B00100FD8 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
@@ -115,7 +124,6 @@
 		7985DB5D231F36C5006D2719 /* FeedSearchBizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchBizTableViewCell.swift; sourceTree = "<group>"; };
 		7985DB60231F4045006D2719 /* DealsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSearchTableViewController.swift; sourceTree = "<group>"; };
 		7985DB62231F406E006D2719 /* DealsSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSearchTableViewCell.swift; sourceTree = "<group>"; };
-		79C7EA032339B5B300F46918 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9176A4681CBC74D779543B70 /* Pods-Krona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona.release.xcconfig"; path = "Target Support Files/Pods-Krona/Pods-Krona.release.xcconfig"; sourceTree = "<group>"; };
 		B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KronaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -191,7 +199,6 @@
 				D10178092949AEE43D86D412 /* Pods-KronaTests.debug.xcconfig */,
 				2D6B9551B8A736AA2468B353 /* Pods-KronaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +301,15 @@
 			path = Ded;
 			sourceTree = "<group>";
 		};
+		4C4A9880233DBC52004E7A55 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A9881233DBC6B004E7A55 /* Constants.swift */,
+				4C572282233EA7F300EBF012 /* TabBarController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4C8ECFE322F7834300100FD8 /* Transaction History */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +346,8 @@
 				BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */,
 				7917326A23149EEF00F327C8 /* FavoritesViewController.swift */,
 				7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */,
+				4C4A987C233D73CC004E7A55 /* BaseViewController.swift */,
+				4C4A987E233D7DCD004E7A55 /* LoginViewController.swift */,
 				79F535E423149AB600C6A599 /* Tutorial */,
 			);
 			path = Onboarding;
@@ -349,8 +367,8 @@
 			isa = PBXGroup;
 			children = (
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
-				79C7EA032339B5B300F46918 /* GoogleService-Info.plist */,
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
+				4C572280233DCE0200EBF012 /* GoogleService-Info.plist */,
 				791732AB2317403F00F327C8 /* Krona.xcdatamodeld */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
@@ -374,6 +392,7 @@
 		F1F8BD2D22DD829C00075D33 /* Krona */ = {
 			isa = PBXGroup;
 			children = (
+				4C4A9880233DBC52004E7A55 /* Helpers */,
 				258CC31A23120C7E0011EF9A /* Business Page */,
 				258CC31923120C5F0011EF9A /* High Level */,
 				4C3B45AF22EF64B00040C2C4 /* Ded */,
@@ -420,6 +439,7 @@
 				F1F8BD2822DD829C00075D33 /* Frameworks */,
 				F1F8BD2922DD829C00075D33 /* Resources */,
 				898FA4EA33DCEF1E265EA464 /* [CP] Embed Pods Frameworks */,
+				5400F8769E20F35E2E3798F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,6 +478,7 @@
 				F1F8BD4722DD82A300075D33 /* Frameworks */,
 				F1F8BD4822DD82A300075D33 /* Resources */,
 				03E0CB4B23438785425B5BFD /* [CP] Embed Pods Frameworks */,
+				5C4836B85C85F067860A111E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -519,7 +540,7 @@
 			files = (
 				F1F8BD3922DD82A300075D33 /* LaunchScreen.storyboard in Resources */,
 				F19078D922E9543500101213 /* defaultRestImage.png in Resources */,
-				79C7EA042339B5B300F46918 /* GoogleService-Info.plist in Resources */,
+				4C572281233DCE0200EBF012 /* GoogleService-Info.plist in Resources */,
 				F1F8BD3622DD82A300075D33 /* Assets.xcassets in Resources */,
 				F1F8BD3422DD829C00075D33 /* Main.storyboard in Resources */,
 			);
@@ -603,6 +624,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5400F8769E20F35E2E3798F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona/Pods-Krona-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona/Pods-Krona-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Krona/Pods-Krona-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C4836B85C85F067860A111E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		898FA4EA33DCEF1E265EA464 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -661,6 +716,8 @@
 				4C164A6D22F7BD3300C0733E /* PaymentTableViewController.swift in Sources */,
 				BA5EAB58230B973E0035B624 /* TutorialContentViewController.swift in Sources */,
 				7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */,
+				4C4A987F233D7DCF004E7A55 /* LoginViewController.swift in Sources */,
+				4C4A987D233D73CC004E7A55 /* BaseViewController.swift in Sources */,
 				251B4DC122F792EB0085BB76 /* Reward.swift in Sources */,
 				BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */,
 				BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */,
@@ -690,9 +747,11 @@
 				F1F8BD2F22DD829C00075D33 /* AppDelegate.swift in Sources */,
 				4C3B45AE22EF60650040C2C4 /* ProfileTableViewController.swift in Sources */,
 				BA5EAB56230B96480035B624 /* TutorialPageViewController.swift in Sources */,
+				4C572283233EA7F300EBF012 /* TabBarController.swift in Sources */,
 				251B4DBD22F78F630085BB76 /* Business.swift in Sources */,
 				7985DB61231F4045006D2719 /* DealsSearchTableViewController.swift in Sources */,
 				BA25871F22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift in Sources */,
+				4C4A9882233DBC6B004E7A55 /* Constants.swift in Sources */,
 				25F39E2D2306588700A46381 /* BusinessPage.swift in Sources */,
 				4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */,
 			);
@@ -877,7 +936,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.krona.kronaapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krona.kroncash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -896,7 +955,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.krona.kronaapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krona.kroncash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,6 +7,12 @@ target 'Krona' do
 
   # Pods for Krona
 pod 'Firebase/Analytics'
+pod 'FirebaseUI'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'FirebaseUI/Auth'
+pod 'Firebase/Auth'
+
   target 'KronaTests' do
     inherit! :search_paths
     # Pods for testing
