@@ -204,7 +204,7 @@ DEPENDENCIES:
   - FirebaseUI/Auth
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AppAuth
     - BoringSSL-GRPC
     - FBSDKCoreKit
@@ -268,4 +268,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 93b3084257c7c244f408168001abe964c341b9b2
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.0

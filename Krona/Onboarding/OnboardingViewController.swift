@@ -120,39 +120,6 @@ class OnboardingViewController: UIViewController
     }
     
     
-    @IBAction func continueTouched(_ sender: UIButton)
-    {
-
-        
-        /*
-        let appDel = UIApplication.shared.delegate as! AppDelegate
-        let context = appDel.persistentContainer.viewContext
-        
-        let ent = NSEntityDescription.entity(forEntityName: "User", in: context)
-        
-        let newUser = User(entity: ent!, insertInto: context)
-        newUser.firstName = firstNameTextField.text!
-        newUser.lastName = lastNameTextField.text!
-        newUser.email = emailTextField.text!
-        newUser.password = passwordTextField.text!
-        
-        do
-        {
-            try context.save()
-        }
-        catch
-        {
-            fatalError("Failure to save context: \(error)")
-        }
-        
-        UserDefaults.standard.set(firstNameTextField.text, forKey: "firstName")
-        performSegue(withIdentifier: "toTutorialSegue", sender: self)
- 
- */
-    }
-    
-    
-    
     func showError(_ message : String)  {
         errorLabel.text! = message
         errorLabel.alpha = 1
