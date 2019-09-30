@@ -13,7 +13,7 @@ class FeedViewController: UIViewController
 {
     //THIS IS WHERE THE GOD-LIST IS CREATED
     var list = [Business]()
-    
+    // comment
     @IBOutlet weak var feedTableView: UITableView!
     
     let feedSearchController = UISearchController(searchResultsController: nil)
