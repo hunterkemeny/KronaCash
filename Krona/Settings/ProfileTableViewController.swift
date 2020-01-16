@@ -8,19 +8,19 @@
 
 import UIKit
 
-private let reuseIdentifier = "ProfileTableViewCell"
+//private let reuseIdentifier = "ProfileTableViewCell"
 
 class ProfileTableViewController: UITableViewController {
 
 
     //MARK: Properties
     
-    var userInfoHeader: UserInfoHeader!
+    //var userInfoHeader: UserInfoHeader!
     
     // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
+        //configureUI()
     }
     
     //MARK: IBAction
@@ -43,6 +43,7 @@ class ProfileTableViewController: UITableViewController {
     
     //MARK: Helper Functions
     
+    /*
     func configureTableView() {
         let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 100)
         userInfoHeader = UserInfoHeader(frame: frame)
@@ -59,11 +60,5 @@ class ProfileTableViewController: UITableViewController {
         navigationController?.navigationBar.barTintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
         navigationItem.title = "Profile"
     }
- /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ProfileTableViewCell
-
-        return cell
-    }
-*/
+ */
 }

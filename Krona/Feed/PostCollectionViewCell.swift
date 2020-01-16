@@ -33,7 +33,7 @@ class PostCollectionViewCell: UICollectionViewCell
         }
         classification.text = classtxt
         
-        postImageView.image = biz.deals[0].image
+        postImageView.image = biz.deal
     }
     
 }

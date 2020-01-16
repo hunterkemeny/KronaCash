@@ -11,6 +11,7 @@ import UIKit
 class Business
 {
     var name: String?
+    var deal: UIImage?
     var icon: UIImage?
     var isFavorite: Bool?
     var offersGroup: Bool?
@@ -20,7 +21,7 @@ class Business
     var classification: Classification?
     var category: String?
     
-    init (name: String, icon: UIImage, distance: Double, category: String, classification: Classification)
+    init (name: String, icon: UIImage, distance: Double, category: String, classification: Classification, deal: UIImage)
     {
         self.name = name
         self.icon = icon
@@ -28,6 +29,7 @@ class Business
         self.category = category
         self.classification = classification
         self.isFavorite = false // changed from true
+        self.deal = deal
     }
     
     func addDeal(deal: Deal)
@@ -39,6 +41,8 @@ class Business
     {
         rewards.append(reward)
     }
+    
+    
 }
 
 enum Classification

@@ -17,6 +17,7 @@
 		25F39E3323065A5200A46381 /* RewardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F39E3223065A5200A46381 /* RewardCell.swift */; };
 		42554D6B9F2F05BE06817D16 /* Pods_Krona_KronaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408B6906ED5C013EA6E621ED /* Pods_Krona_KronaUITests.framework */; };
 		49C4A4E9587ECD921BB6BA76 /* Pods_Krona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BDC55AC15FC7C13989464 /* Pods_Krona.framework */; };
+		4C0E0D6123D1127E00105BC6 /* BusinessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E0D6023D1127E00105BC6 /* BusinessTableViewController.swift */; };
 		4C164A6D22F7BD3300C0733E /* PaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C164A6C22F7BD3300C0733E /* PaymentTableViewController.swift */; };
 		4C3B45A822EE5B740040C2C4 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */; };
 		4C3B45AC22EE62EA0040C2C4 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */; };
@@ -30,13 +31,13 @@
 		4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */; };
 		4C8ECFE722F7905900100FD8 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE622F7905900100FD8 /* Payment.swift */; };
 		4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */; };
+		4C9B8B7623A6A29300A70606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */; };
 		7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326A23149EEF00F327C8 /* FavoritesViewController.swift */; };
 		7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */; };
 		791732AD2317403F00F327C8 /* Krona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791732AB2317403F00F327C8 /* Krona.xcdatamodeld */; };
 		794B1E59232871F1002D30C8 /* VisitedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */; };
 		794B1E5B23287541002D30C8 /* VisitedSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */; };
 		794B1E5D2328864C002D30C8 /* FeedSearchDealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794B1E5C2328864C002D30C8 /* FeedSearchDealTableViewCell.swift */; };
-		7965A8F523405F8C0085C987 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7965A8F423405F8C0085C987 /* GoogleService-Info.plist */; };
 		7985DB54231F0B07006D2719 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB52231F0B07006D2719 /* User+CoreDataClass.swift */; };
 		7985DB55231F0B07006D2719 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB53231F0B07006D2719 /* User+CoreDataProperties.swift */; };
 		7985DB57231F35CF006D2719 /* FeedSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */; };
@@ -55,7 +56,6 @@
 		BA5EAB54230B8C0A0035B624 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */; };
 		BA5EAB56230B96480035B624 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */; };
 		BA5EAB58230B973E0035B624 /* TutorialContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */; };
-		F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */; };
 		F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */; };
 		F19078D922E9543500101213 /* defaultRestImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F19078D822E9543500101213 /* defaultRestImage.png */; };
 		F1EEDD5222E93E4400DEC2E6 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */; };
@@ -97,6 +97,7 @@
 		25F39E3223065A5200A46381 /* RewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCell.swift; sourceTree = "<group>"; };
 		2D6B9551B8A736AA2468B353 /* Pods-KronaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KronaTests.release.xcconfig"; path = "Target Support Files/Pods-KronaTests/Pods-KronaTests.release.xcconfig"; sourceTree = "<group>"; };
 		408B6906ED5C013EA6E621ED /* Pods_Krona_KronaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krona_KronaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0E0D6023D1127E00105BC6 /* BusinessTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewController.swift; sourceTree = "<group>"; };
 		4C164A6C22F7BD3300C0733E /* PaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewController.swift; sourceTree = "<group>"; };
 		4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
@@ -110,13 +111,13 @@
 		4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
 		4C8ECFE622F7905900100FD8 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
+		4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7917326A23149EEF00F327C8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		791732AC2317403F00F327C8 /* Krona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Krona.xcdatamodel; sourceTree = "<group>"; };
 		794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedSearchTableViewController.swift; sourceTree = "<group>"; };
 		794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedSearchTableViewCell.swift; sourceTree = "<group>"; };
 		794B1E5C2328864C002D30C8 /* FeedSearchDealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchDealTableViewCell.swift; sourceTree = "<group>"; };
-		7965A8F423405F8C0085C987 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7985DB52231F0B07006D2719 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7985DB53231F0B07006D2719 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7985DB56231F35CF006D2719 /* FeedSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSearchTableViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +141,6 @@
 		CD66512F3C23E84350AE2648 /* Pods-Krona-KronaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona-KronaUITests.release.xcconfig"; path = "Target Support Files/Pods-Krona-KronaUITests/Pods-Krona-KronaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D10178092949AEE43D86D412 /* Pods-KronaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KronaTests.debug.xcconfig"; path = "Target Support Files/Pods-KronaTests/Pods-KronaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F03F200F0D043A3428E35739 /* Pods-Krona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Krona.debug.xcconfig"; path = "Target Support Files/Pods-Krona/Pods-Krona.debug.xcconfig"; sourceTree = "<group>"; };
-		F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewController.swift; sourceTree = "<group>"; };
 		F19078D822E9543500101213 /* defaultRestImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultRestImage.png; sourceTree = "<group>"; };
 		F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
@@ -230,6 +230,7 @@
 			children = (
 				25DE4C12230B158F00635251 /* DealCell.swift */,
 				25F39E2C2306588700A46381 /* BusinessPage.swift */,
+				4C0E0D6023D1127E00105BC6 /* BusinessTableViewController.swift */,
 				25F39E3223065A5200A46381 /* RewardCell.swift */,
 				7985DB5F231F4021006D2719 /* Deals Search */,
 			);
@@ -249,11 +250,8 @@
 		4C3B45A322EE53AC0040C2C4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				F12DDC7B22E57E07008114D7 /* ProfileTableViewCell.swift */,
 				4C3B45A722EE5B740040C2C4 /* UserInfoHeader.swift */,
 				4C3B45AD22EF60650040C2C4 /* ProfileTableViewController.swift */,
-				4C164A6B22F7BAAB00C0733E /* Payment */,
-				4C8ECFE322F7834300100FD8 /* Transaction History */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -292,13 +290,15 @@
 			path = Visited;
 			sourceTree = "<group>";
 		};
-		4C3B45AF22EF64B00040C2C4 /* Ded */ = {
+		4C3B45AF22EF64B00040C2C4 /* Depracated */ = {
 			isa = PBXGroup;
 			children = (
 				F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */,
 				4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */,
+				4C8ECFE322F7834300100FD8 /* Transaction History */,
+				4C164A6B22F7BAAB00C0733E /* Payment */,
 			);
-			path = Ded;
+			path = Depracated;
 			sourceTree = "<group>";
 		};
 		4C4A9880233DBC52004E7A55 /* Helpers */ = {
@@ -368,8 +368,6 @@
 			children = (
 				F1F8BD3222DD829C00075D33 /* Main.storyboard */,
 				F1F8BD2E22DD829C00075D33 /* AppDelegate.swift */,
-				7965A8F423405F8C0085C987 /* GoogleService-Info.plist */,
-				791732AB2317403F00F327C8 /* Krona.xcdatamodeld */,
 				F1F8BD2D22DD829C00075D33 /* Krona */,
 				F1F8BD4222DD82A300075D33 /* KronaTests */,
 				F1F8BD4D22DD82A300075D33 /* KronaUITests */,
@@ -392,19 +390,21 @@
 		F1F8BD2D22DD829C00075D33 /* Krona */ = {
 			isa = PBXGroup;
 			children = (
-				4C4A9880233DBC52004E7A55 /* Helpers */,
-				258CC31A23120C7E0011EF9A /* Business Page */,
+				79F535E323149AA100C6A599 /* Onboarding */,
 				258CC31923120C5F0011EF9A /* High Level */,
-				4C3B45AF22EF64B00040C2C4 /* Ded */,
+				4C3B45A422EE53CD0040C2C4 /* Feed */,
+				258CC31A23120C7E0011EF9A /* Business Page */,
 				4C3B45A622EE53E90040C2C4 /* Visited */,
 				4C3B45A522EE53DB0040C2C4 /* Referrals */,
-				4C3B45A422EE53CD0040C2C4 /* Feed */,
-				79F535E323149AA100C6A599 /* Onboarding */,
 				4C3B45A322EE53AC0040C2C4 /* Settings */,
+				4C4A9880233DBC52004E7A55 /* Helpers */,
+				4C3B45AF22EF64B00040C2C4 /* Depracated */,
 				F1F8BD3522DD82A300075D33 /* Assets.xcassets */,
 				F19078D822E9543500101213 /* defaultRestImage.png */,
 				F1F8BD3722DD82A300075D33 /* LaunchScreen.storyboard */,
 				F1F8BD3A22DD82A300075D33 /* Info.plist */,
+				4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */,
+				791732AB2317403F00F327C8 /* Krona.xcdatamodeld */,
 			);
 			path = Krona;
 			sourceTree = "<group>";
@@ -540,7 +540,7 @@
 			files = (
 				F1F8BD3922DD82A300075D33 /* LaunchScreen.storyboard in Resources */,
 				F19078D922E9543500101213 /* defaultRestImage.png in Resources */,
-				7965A8F523405F8C0085C987 /* GoogleService-Info.plist in Resources */,
+				4C9B8B7623A6A29300A70606 /* GoogleService-Info.plist in Resources */,
 				F1F8BD3622DD82A300075D33 /* Assets.xcassets in Resources */,
 				F1F8BD3422DD829C00075D33 /* Main.storyboard in Resources */,
 			);
@@ -711,7 +711,7 @@
 				7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */,
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				25DE4C13230B158F00635251 /* DealCell.swift in Sources */,
-				F12DDC7C22E57E07008114D7 /* ProfileTableViewCell.swift in Sources */,
+				4C0E0D6123D1127E00105BC6 /* BusinessTableViewController.swift in Sources */,
 				25F39E3323065A5200A46381 /* RewardCell.swift in Sources */,
 				4C164A6D22F7BD3300C0733E /* PaymentTableViewController.swift in Sources */,
 				BA5EAB58230B973E0035B624 /* TutorialContentViewController.swift in Sources */,
@@ -930,7 +930,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65LK92QLY8;
+				DEVELOPMENT_TEAM = G2Z77BN568;
 				INFOPLIST_FILE = Krona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -949,7 +949,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65LK92QLY8;
+				DEVELOPMENT_TEAM = G2Z77BN568;
 				INFOPLIST_FILE = Krona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

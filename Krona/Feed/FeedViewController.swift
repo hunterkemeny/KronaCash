@@ -17,6 +17,10 @@ class FeedViewController: UIViewController
     @IBOutlet weak var feedTableView: UITableView!
     
     let feedSearchController = UISearchController(searchResultsController: nil)
+    var showDetailEat = "ShowBusinessEat"
+    var showDetailShop = "ShowBusinessShop"
+    var showDetailDeal = "ShowBusinessDeal"
+    var showBusiness = "ShowBusiness"
     
     override func viewDidLoad()
     {
@@ -46,6 +50,7 @@ class FeedViewController: UIViewController
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
     }
+    
 }
 
 extension FeedViewController: UITableViewDataSource, UITableViewDelegate
@@ -72,7 +77,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
         {
             let cell = feedTableView.dequeueReusableCell(withIdentifier: "ShopIconsTableViewCell", for: indexPath) as! ShopIconsTableViewCell
             cell.setAttributes(category:
-                "Places to Shop")
+                "Places to Eat")
             return cell
         }
         else
@@ -110,6 +115,9 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
     }
 }
 
+var businessIcon: UIImage!
+var dealImage: UIImage!
+
 extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -122,6 +130,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
 
         if collectionView.tag == 0
         {
+            print("Hello1")
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
             cell.setAttributes(biz: list[indexPath.row])
             return cell
@@ -137,6 +146,36 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
             cell.setAttributes(biz: list[indexPath.row])
             return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Hello2")
+        
+        if collectionView.tag == 0 {
+            print("Hello3")
+            businessIcon = list[indexPath.row].icon
+            dealImage = list[indexPath.row].deal
+            performSegue(withIdentifier: showBusiness, sender: nil)
+            
+        } else if collectionView.tag == 1 {
+            businessIcon = list[indexPath.row].icon
+            dealImage = list[indexPath.row].deal
+            performSegue(withIdentifier: showBusiness, sender: nil)
+            
+        } else {
+            businessIcon = list[indexPath.row].icon
+            dealImage = list[indexPath.row].deal
+            performSegue(withIdentifier: showBusiness, sender: nil)
+        }
+ 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == showBusiness {
+            let detailVC = segue.destination as! BusinessTableViewController
+            detailVC.business = businessIcon
+            detailVC.deal = dealImage
         }
     }
 }

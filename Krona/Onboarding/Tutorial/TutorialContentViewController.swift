@@ -22,7 +22,7 @@ class TutorialContentViewController: UIViewController
     {
         didSet
         {
-            subheadingLabel.numberOfLines = 0
+            //subheadingLabel.numberOfLines = 0
         }
     }
     
@@ -38,7 +38,7 @@ class TutorialContentViewController: UIViewController
         super.viewDidLoad()
         
         headingLabel.text = heading
-        subheadingLabel.text = subheading
+        //subheadingLabel.text = subheading
         contentImageView.image = UIImage(named: imageFile)
     }
     
