@@ -9,15 +9,21 @@
 import UIKit
 import CoreData
 
-class VisitedViewController: UIViewController {
+class VisitedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     var fullList = [Business]()
     var favoriteList = [Business]()
+    var list = [Business]()
+    var showBusiness = "VisitedShowBusiness"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadBusinesses()
+        List.loadBusinesses()
+        list = List.getList()
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let searchResults = storyboard.instantiateViewController(withIdentifier: "VisitedSearchTableViewController") as! VisitedSearchTableViewController
         let visitedSearchController = UISearchController(searchResultsController: searchResults)
@@ -76,43 +82,59 @@ class VisitedViewController: UIViewController {
             }
         }
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return favoriteList.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 15
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier:  "RestaurantTableViewCell") as! RestaurantTableViewCell
+        let biz = favoriteList[indexPath.section]
+        cell.setAttributes(biz: biz)
+       
+        //JAMESIFICATION
+        cell.layer.cornerRadius = 20
+        let shadowPath2 = CGRect(x:0, y:0, width:374, height: 100)
+        let rounded = UIBezierPath(roundedRect: shadowPath2, cornerRadius: 30)
+        cell.layer.masksToBounds = false
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: CGFloat(1.0), height: CGFloat(10.0))
+        cell.layer.shadowOpacity = 0.3
+        cell.layer.shadowPath = rounded.cgPath
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        self.performSegue(withIdentifier: "VisitedShowBusiness", sender: self)
+    }
+       
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "VisitedShowBusiness" {
+               let detailVC = segue.destination as! BusinessTableViewController
+               detailVC.business = businessIcon
+               detailVC.deal = dealImage
+           }
+       }
+ 
 }
-    extension VisitedViewController : UITableViewDataSource, UITableViewDelegate {
-        
-        func numberOfSections(in tableView: UITableView) -> Int {
-            return favoriteList.count
-        }
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
-        
-        func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            return 15
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-        {
-            let cell = tableView.dequeueReusableCell(withIdentifier:  "RestaurantTableViewCell") as! RestaurantTableViewCell
-            let biz = favoriteList[indexPath.section]
-            cell.setAttributes(biz: biz)
-           
-            //JAMESIFICATION
-            cell.layer.cornerRadius = 20
-            let shadowPath2 = CGRect(x:0, y:0, width:374, height: 100)
-            let rounded = UIBezierPath(roundedRect: shadowPath2, cornerRadius: 30)
-            cell.layer.masksToBounds = false
-            cell.layer.shadowColor = UIColor.black.cgColor
-            cell.layer.shadowOffset = CGSize(width: CGFloat(1.0), height: CGFloat(10.0))
-            cell.layer.shadowOpacity = 0.3
-            cell.layer.shadowPath = rounded.cgPath
-            
-            return cell
-        }
-        
-        func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            let headerView = UIView()
-            headerView.backgroundColor = UIColor.clear
-            return headerView
-        }
-}
+
+
+

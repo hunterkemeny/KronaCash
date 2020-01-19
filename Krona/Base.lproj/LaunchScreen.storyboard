@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,19 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1-100" translatesAutoresizingMaskIntoConstraints="NO" id="ypF-PQ-v5a">
-                                <rect key="frame" x="110" y="351" width="194" height="194"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="roundedKronaAppBorder" translatesAutoresizingMaskIntoConstraints="NO" id="VaX-cO-SkE">
+                                <rect key="frame" x="130" y="373" width="154" height="151"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ypF-PQ-v5a" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9tC-pp-UPl"/>
-                            <constraint firstItem="ypF-PQ-v5a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CS4-gx-QB8"/>
-                            <constraint firstItem="ypF-PQ-v5a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="307" id="GrR-bn-imJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypF-PQ-v5a" secondAttribute="trailing" constant="110" id="PNA-BU-f1v"/>
-                            <constraint firstItem="ypF-PQ-v5a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QnT-U4-Noa"/>
-                            <constraint firstItem="ypF-PQ-v5a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="bNv-5w-4k3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ypF-PQ-v5a" secondAttribute="bottom" constant="317" id="izN-nh-rMY"/>
+                            <constraint firstItem="VaX-cO-SkE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="47T-Gx-Ot7"/>
+                            <constraint firstItem="VaX-cO-SkE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kst-r1-SLY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Artboard 1-100" width="2000" height="2000"/>
+        <image name="roundedKronaAppBorder" width="2000" height="2000"/>
     </resources>
 </document>

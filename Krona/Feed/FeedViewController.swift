@@ -17,9 +17,6 @@ class FeedViewController: UIViewController
     @IBOutlet weak var feedTableView: UITableView!
     
     let feedSearchController = UISearchController(searchResultsController: nil)
-    var showDetailEat = "ShowBusinessEat"
-    var showDetailShop = "ShowBusinessShop"
-    var showDetailDeal = "ShowBusinessDeal"
     var showBusiness = "ShowBusiness"
     
     override func viewDidLoad()
@@ -130,7 +127,6 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
 
         if collectionView.tag == 0
         {
-            print("Hello1")
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
             cell.setAttributes(biz: list[indexPath.row])
             return cell
@@ -150,10 +146,7 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Hello2")
-        
         if collectionView.tag == 0 {
-            print("Hello3")
             businessIcon = list[indexPath.row].icon
             dealImage = list[indexPath.row].deal
             performSegue(withIdentifier: showBusiness, sender: nil)
