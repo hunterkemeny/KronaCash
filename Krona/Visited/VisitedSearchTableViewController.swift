@@ -10,6 +10,7 @@ import UIKit
 
 class VisitedSearchTableViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate
 {
+    //ERROR: On the first download, there tends to be three of every store, but after closing and reopening the app, it goes back to the correct amount
     var bizArray = [Business]()
     var currBizArray = [Business]()
     
@@ -27,7 +28,7 @@ class VisitedSearchTableViewController: UITableViewController, UISearchControlle
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return currBizArray.count
+        return currBizArray.count/2 //Solution to two of every store problem is currently to divide by 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

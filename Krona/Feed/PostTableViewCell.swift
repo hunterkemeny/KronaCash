@@ -14,9 +14,8 @@ class PostTableViewCell: UITableViewCell
     @IBOutlet weak var postCollectionView: UICollectionView!
     @IBOutlet private weak var collectionLabel: UILabel!
     
-    func setAttributes(biz: Business)
-    {
-        collectionLabel.text = biz.category
+    func setAttributes(save: String) {
+        collectionLabel.text = save
     }
 }
 

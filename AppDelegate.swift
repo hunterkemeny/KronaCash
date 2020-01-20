@@ -7,10 +7,7 @@
 //
 
 
-//TODO: Fix pictures for tutorial. Add more store/restaurant pics.
-// Add more deal pics. Fix style on business page. fix double index.path on first open.
-// Fix double index.path on feed searchbar. add links to business page on both search bars. fix double/triple indexpath on visited searchbar
-// Make code expressive and organized
+//TODO: Fix segues to business page. Make search bar links work. Fix pictures for tutorial.
 
 import UIKit
 import CoreData

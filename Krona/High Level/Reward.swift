@@ -11,24 +11,13 @@ import UIKit
 class Reward
 {
     var name: String?
-    var progress: Double?
-    var total: Double?
-    var type: rewardType?
-    var URL: String?
+    var description: String?
+    var image: UIImage?
     
-    init(name:String, progress:Double, total:Double, type:rewardType)
+    init(name:String, description: String, image: UIImage)
     {
         self.name = name
-        self.progress = progress
-        self.total = total
-        self.type = type
+        self.description = description
+        self.image = image
     }
-}
-
-enum rewardType
-{
-    case survey
-    case spendGoal
-    case visitGoal
-    case signUp
 }

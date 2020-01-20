@@ -8,6 +8,8 @@
 
 import UIKit
 
+//TODO: Add links to business page from searchbar
+
 class FeedSearchTableViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate
 {
     var categories = ["Most Popular", "New to Krona", "Food", "Shopping", "Apparel", "Groceries", "Entertainment", "Education", "Accessories", "Finance"]
@@ -75,7 +77,7 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
             if section == 0 { return currBizArray.count }
             else { return currDealArray.count }
         }
-        return categories.count
+        return categories.count/2 //Showing up twice error solved by dividing by 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

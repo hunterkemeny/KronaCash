@@ -8,45 +8,46 @@
 
 import UIKit
 
-class Business
-{
+class Business {
     var name: String?
     var deal: UIImage?
+    var reward: UIImage?
+    var promotion: UIImage?
     var icon: UIImage?
     var isFavorite: Bool?
     var offersGroup: Bool?
     var deals = [Deal]()
     var rewards = [Reward]()
+    var promotions = [Promotion]()
+    
     var distance: Double?
     var classification: Classification?
     var category: String?
     
-    init (name: String, icon: UIImage, distance: Double, category: String, classification: Classification, deal: UIImage)
-    {
+    init (name: String, icon: UIImage, distance: Double, category: String, classification: Classification) {
         self.name = name
         self.icon = icon
         self.distance = distance
         self.category = category
         self.classification = classification
         self.isFavorite = false // changed from true
-        self.deal = deal
     }
     
-    func addDeal(deal: Deal)
-    {
+    func addDeal(deal: Deal) {
         deals.append(deal)
     }
     
-    func addReward(reward:Reward)
-    {
+    func addReward(reward:Reward) {
         rewards.append(reward)
     }
     
+    func addPromotion(promotion: Promotion) {
+        promotions.append(promotion)
+    }
     
 }
 
-enum Classification
-{
+enum Classification {
     case sponsored
     case suggested
 }

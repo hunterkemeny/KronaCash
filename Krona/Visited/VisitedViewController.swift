@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 
 class VisitedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    //TODO: Add links to business page from searchbar
+    //ERROR: Because of weird checkmark problem, only the first 7 favorited restaurants are showing up in the favorites
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -122,15 +124,21 @@ class VisitedViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
+        businessIcon = favoriteList[indexPath.section].icon
+        dealImage = favoriteList[indexPath.section].deals[0].image
+        promotionImage = favoriteList[indexPath.section].promotions[0].image
+        rewardImage = favoriteList[indexPath.section].rewards[0].image
         self.performSegue(withIdentifier: "VisitedShowBusiness", sender: self)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
        
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            if segue.identifier == "VisitedShowBusiness" {
-               let detailVC = segue.destination as! BusinessTableViewController
-               detailVC.business = businessIcon
-               detailVC.deal = dealImage
+            let detailVC = segue.destination as! BusinessTableViewController
+            detailVC.business = businessIcon
+            detailVC.deal = dealImage
+            detailVC.promotion = promotionImage
+            detailVC.reward = rewardImage
            }
        }
  

@@ -16,7 +16,7 @@ class PostCollectionViewCell: UICollectionViewCell
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var classification: UILabel!
     
-    func setAttributes(biz: Business)
+    func setAttributes(biz: Business, saveIndex: Int)
     {
         companyIcon.image = biz.icon
         companyName.text = biz.name
@@ -32,8 +32,13 @@ class PostCollectionViewCell: UICollectionViewCell
             classtxt = "For You"
         }
         classification.text = classtxt
-        
-        postImageView.image = biz.deal
+        if saveIndex == 0 {
+            postImageView.image = biz.deals[0].image
+        } else if saveIndex == 1 {
+            postImageView.image = biz.promotions[0].image
+        } else {
+            postImageView.image = biz.rewards[0].image
+        }
     }
     
 }

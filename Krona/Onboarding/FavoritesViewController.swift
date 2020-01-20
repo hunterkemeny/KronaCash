@@ -132,7 +132,7 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate
         }
         else
         {
-            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark //ERROR: Selects multiple stores with one tap
             let biz = list[indexPath.section]
             biz.isFavorite = true
         }

@@ -26,15 +26,15 @@ class Deal
     }
     
     //TYPE2
-    init(img: UIImage?){
-        self.image = img
+    init(image: UIImage?){
+        self.image = image
     }
     
     //TYPE3
-    init(name: String, description: String, img: UIImage?)
+    init(name: String, description: String, image: UIImage?)
     {
         self.name = name
         self.description = description
-        self.image = img
+        self.image = image
     }
 }

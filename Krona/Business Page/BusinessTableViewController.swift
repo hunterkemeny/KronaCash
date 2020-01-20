@@ -11,7 +11,6 @@ import UIKit
 class BusinessTableViewController: UITableViewController {
     
     @IBOutlet weak var businessImage: UIImageView!
-    @IBOutlet weak var businessLabel: UILabel!
     @IBOutlet weak var dealsImage: UIImageView!
     @IBOutlet weak var promotionsImage: UIImageView!
     @IBOutlet weak var rewardsImage: UIImageView!
@@ -27,7 +26,6 @@ class BusinessTableViewController: UITableViewController {
         super.viewDidLoad()
         
         businessImage.image = business
-        businessLabel.text = name
         dealsImage.image = deal
         promotionsImage.image = promotion
         rewardsImage.image = reward

@@ -11,9 +11,12 @@ import CoreData
 
 class FeedViewController: UIViewController
 {
-    //THIS IS WHERE THE GOD-LIST IS CREATED
+    //ERROR: When you download the app, there is sometimes two of every store. In the search bar, there are two/three of every store on the first download, then when the app is closed and reopened there are the correct amount
+    //ERROR: the last collection view is cut off by the icons at the bottom
     var list = [Business]()
-    // comment
+    var eatList = [Business]()
+    var shopList = [Business]()
+    
     @IBOutlet weak var feedTableView: UITableView!
     
     let feedSearchController = UISearchController(searchResultsController: nil)
@@ -24,6 +27,8 @@ class FeedViewController: UIViewController
         super.viewDidLoad()
         
         List.loadBusinesses()
+        eatList = List.getEatList()
+        shopList = List.getShopList()
         list = List.getList()
         feedTableView.dataSource = self
         feedTableView.delegate = self
@@ -60,29 +65,30 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return list.count + 2 // for icons scroll at top
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        if indexPath.row == 0
-        {
+        if indexPath.row == 0 {
             let cell = feedTableView.dequeueReusableCell(withIdentifier: "EatIconsTableViewCell", for: indexPath) as! EatIconsTableViewCell
             cell.setAttributes(category: "Places to Eat")
             return cell
-        }
-        else if indexPath.row == 1
-        {
+        } else if indexPath.row == 1 {
             let cell = feedTableView.dequeueReusableCell(withIdentifier: "ShopIconsTableViewCell", for: indexPath) as! ShopIconsTableViewCell
-            cell.setAttributes(category:
-                "Places to Eat")
+            cell.setAttributes(category: "Places to Shop")
             return cell
-        }
-        else
-        {
+        } else if indexPath.row == 2 {
             let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
-            let biz = list[indexPath.row - 2]
-            cell.setAttributes(biz: biz)
+            cell.setAttributes(save: "Deals")
+            return cell
+        } else if indexPath.row == 3 {
+            let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
+            cell.setAttributes(save: "Promotions")
+            return cell
+        } else {
+            let cell = feedTableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as! PostTableViewCell
+            cell.setAttributes(save: "Rewards")
             return cell
         }
     }
@@ -114,52 +120,69 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
 }
 
 var businessIcon: UIImage!
+
 var dealImage: UIImage!
+var promotionImage: UIImage!
+var rewardImage: UIImage!
 
 extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return list.count
+        if collectionView.tag == 0 {
+            return eatList.count
+        } else if collectionView.tag == 1 {
+            return shopList.count
+        } else {
+            return list.count
+        }
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        if collectionView.tag == 0
-        {
+        if collectionView.tag == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
-            cell.setAttributes(biz: list[indexPath.row])
+            cell.setAttributes(biz: eatList[indexPath.row])
             return cell
-        }
-        else if collectionView.tag == 1
-        {
+        } else if collectionView.tag == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopIconsCollectionViewCell", for: indexPath) as! ShopIconsCollectionViewCell
-            cell.setAttributes(biz: list[indexPath.row])
+            cell.setAttributes(biz: shopList[indexPath.row])
             return cell
-        }
-        else
-        {
+        } else if collectionView.tag == 2 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
-            cell.setAttributes(biz: list[indexPath.row])
+            cell.setAttributes(biz: list[indexPath.row], saveIndex: 0)
+            return cell
+        } else if collectionView.tag == 3 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
+            cell.setAttributes(biz: list[indexPath.row], saveIndex: 1)
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as! PostCollectionViewCell
+            cell.setAttributes(biz: list[indexPath.row], saveIndex: 2)
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 0 {
-            businessIcon = list[indexPath.row].icon
-            dealImage = list[indexPath.row].deal
+            businessIcon = eatList[indexPath.row].icon
+            dealImage = eatList[indexPath.row].deals[0].image
+            promotionImage = eatList[indexPath.row].promotions[0].image
+            rewardImage = eatList[indexPath.row].rewards[0].image
             performSegue(withIdentifier: showBusiness, sender: nil)
             
         } else if collectionView.tag == 1 {
-            businessIcon = list[indexPath.row].icon
-            dealImage = list[indexPath.row].deal
+            businessIcon = shopList[indexPath.row].icon
+            dealImage = shopList[indexPath.row].deals[0].image
+            promotionImage = shopList[indexPath.row].promotions[0].image
+            rewardImage = shopList[indexPath.row].rewards[0].image
             performSegue(withIdentifier: showBusiness, sender: nil)
             
         } else {
             businessIcon = list[indexPath.row].icon
-            dealImage = list[indexPath.row].deal
+            dealImage = list[indexPath.row].deals[0].image
+            promotionImage = list[indexPath.row].promotions[0].image
+            rewardImage = list[indexPath.row].rewards[0].image
             performSegue(withIdentifier: showBusiness, sender: nil)
         }
  
@@ -170,35 +193,11 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             let detailVC = segue.destination as! BusinessTableViewController
             detailVC.business = businessIcon
             detailVC.deal = dealImage
+            detailVC.promotion = promotionImage
+            detailVC.reward = rewardImage
+            
         }
     }
 }
-
-// FOR NOW, DO NOT DELETE... MAY BE USEFUL LATER:
-
-/*extension FeedViewController: UISearchBarDelegate
- {
- func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)
- {
- performSegue(withIdentifier: "feedToSearchSegue", sender: nil)
- }
- 
- func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
- {
- searchBar.setShowsCancelButton(true, animated: true)
- return true
- }
- 
- func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
- {
- searchBar.setShowsCancelButton(false, animated: true)
- return true
- }
- 
- func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
- {
- dismiss(animated: true, completion: nil)
- }
- }*/
 
 
