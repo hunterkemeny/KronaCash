@@ -32,6 +32,7 @@ class FeedViewController: UIViewController
         navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.barTintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
         feedSearchController.searchResultsController?.view.isHidden = false
+        navigationItem.title = "Feed"
 
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

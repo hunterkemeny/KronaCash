@@ -32,6 +32,7 @@
 		4C8ECFE722F7905900100FD8 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE622F7905900100FD8 /* Payment.swift */; };
 		4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */; };
 		4C9B8B7623A6A29300A70606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */; };
+		4CD4964223D5442E00841B4A /* VisitedBusinessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4964123D5442E00841B4A /* VisitedBusinessTableViewController.swift */; };
 		7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326A23149EEF00F327C8 /* FavoritesViewController.swift */; };
 		7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */; };
 		791732AD2317403F00F327C8 /* Krona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791732AB2317403F00F327C8 /* Krona.xcdatamodeld */; };
@@ -112,6 +113,7 @@
 		4C8ECFE622F7905900100FD8 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
 		4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CD4964123D5442E00841B4A /* VisitedBusinessTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedBusinessTableViewController.swift; sourceTree = "<group>"; };
 		7917326A23149EEF00F327C8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		791732AC2317403F00F327C8 /* Krona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Krona.xcdatamodel; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				25DE4C12230B158F00635251 /* DealCell.swift */,
 				25F39E2C2306588700A46381 /* BusinessPage.swift */,
 				4C0E0D6023D1127E00105BC6 /* BusinessTableViewController.swift */,
+				4CD4964123D5442E00841B4A /* VisitedBusinessTableViewController.swift */,
 				25F39E3223065A5200A46381 /* RewardCell.swift */,
 				7985DB5F231F4021006D2719 /* Deals Search */,
 			);
@@ -708,6 +711,7 @@
 				BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */,
 				7985DB5A231F3688006D2719 /* FeedSearchLabelTableViewCell.swift in Sources */,
 				794B1E5D2328864C002D30C8 /* FeedSearchDealTableViewCell.swift in Sources */,
+				4CD4964223D5442E00841B4A /* VisitedBusinessTableViewController.swift in Sources */,
 				7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */,
 				F1F8BD5D22DD892F00075D33 /* ReferralsViewController.swift in Sources */,
 				25DE4C13230B158F00635251 /* DealCell.swift in Sources */,
