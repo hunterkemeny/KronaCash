@@ -7,7 +7,7 @@
 //
 
 
-//TODO: Fix segues to business page. Make search bar links work. Fix pictures for tutorial.
+//TODO: Make search bar links work. Fix pictures for tutorial.
 
 import UIKit
 import CoreData

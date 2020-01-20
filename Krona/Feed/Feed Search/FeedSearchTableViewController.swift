@@ -17,6 +17,10 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
     var currBizArray = [Business]()
     var dealArray = [Deal]()
     var currDealArray = [Deal]()
+    var rewardArray = [Reward]()
+    var currRewardArray = [Reward]()
+    var promotionArray = [Promotion]()
+    var currPromotionArray = [Promotion]()
     
     static var typing = false
     
@@ -31,8 +35,16 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
             {
                 dealArray.append(deal)
             }
+            for reward in biz.rewards {
+                rewardArray.append(reward)
+            }
+            for promotion in biz.promotions {
+                promotionArray.append(promotion)
+            }
         }
         currDealArray = dealArray
+        currRewardArray = rewardArray
+        currPromotionArray = promotionArray
     }
     
     // TODO: Implement suggestion cells when not typing
@@ -64,40 +76,46 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
         FeedSearchTableViewController.typing = false
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int
-    {
-        if FeedSearchTableViewController.typing { return 2 }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        if FeedSearchTableViewController.typing { return 4 }
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        if FeedSearchTableViewController.typing
-        {
-            if section == 0 { return currBizArray.count }
-            else { return currDealArray.count }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if FeedSearchTableViewController.typing {
+            if section == 0 {
+                return currBizArray.count
+            } else if section == 1 {
+                return currDealArray.count
+            } else if section == 2 {
+                return currPromotionArray.count
+            } else {
+                return currRewardArray.count
+            }
         }
         return categories.count/2 //Showing up twice error solved by dividing by 2
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        if FeedSearchTableViewController.typing
-        {
-            if indexPath.section == 0
-            {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if FeedSearchTableViewController.typing {
+            if indexPath.section == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchBizTableViewCell") as! FeedSearchBizTableViewCell
                 cell.setAttributes(biz: currBizArray[indexPath.row])
                 return cell
-            }
-            else
-            {
+            } else if indexPath.section == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchDealTableViewCell") as! FeedSearchDealTableViewCell
                 cell.setAttributes(deal: currDealArray[indexPath.row])
                 return cell
+            } else if indexPath.section == 2 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchDealTableViewCell") as! FeedSearchDealTableViewCell
+                cell.setAttributes(promotion: currPromotionArray[indexPath.row])
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchDealTableViewCell") as! FeedSearchDealTableViewCell
+                cell.setAttributes(reward: currRewardArray[indexPath.row])
+                return cell
             }
         }
-     
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchLabelTableViewCell") as! FeedSearchLabelTableViewCell
         cell.setAttributes(name: categories[indexPath.row])
         return cell
@@ -119,6 +137,22 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
         currDealArray = dealArray.filter { deal in
             for term in searchTerms {
                 if !(deal.name!.lowercased().contains(term.lowercased()) || deal.description!.lowercased().contains(term.lowercased()))
+                { return false }
+            }
+            return true
+        }
+        
+        currPromotionArray = promotionArray.filter { promotion in
+            for term in searchTerms {
+                if !(promotion.name!.lowercased().contains(term.lowercased()) || promotion.description!.lowercased().contains(term.lowercased()))
+                { return false }
+            }
+            return true
+        }
+        
+        currRewardArray = rewardArray.filter { reward in
+            for term in searchTerms {
+                if !(reward.name!.lowercased().contains(term.lowercased()) || reward.description!.lowercased().contains(term.lowercased()))
                 { return false }
             }
             return true
