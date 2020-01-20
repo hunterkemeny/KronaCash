@@ -75,7 +75,7 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
             if section == 0 { return currBizArray.count }
             else { return currDealArray.count }
         }
-        return categories.count/2
+        return categories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

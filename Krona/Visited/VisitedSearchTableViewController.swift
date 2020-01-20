@@ -27,7 +27,7 @@ class VisitedSearchTableViewController: UITableViewController, UISearchControlle
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return currBizArray.count/2
+        return currBizArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

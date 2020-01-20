@@ -6,6 +6,12 @@
 //  Copyright © 2019 Krona Technologies Incorporated. All rights reserved.
 //
 
+
+//TODO: 1. Make custom login, continue, and next buttons. 2. Fix pictures for tutorial 3. Add more store/restaurant pics
+// 4. Add more deal pics 5. Fix style on business page 6. Add header to feed 7. fix double index.path on first open
+// 8. Fix double index.path on feed searchbar 9. add links to business page on both search bars 10. fix double/triple
+// indexpath on visited searchbar
+
 import UIKit
 import CoreData
 import Firebase

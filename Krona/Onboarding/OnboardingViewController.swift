@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseAuth
 import Firebase
 
-class OnboardingViewController: UIViewController
+class OnboardingViewController: UIViewController, UITextFieldDelegate
 {
 
     
@@ -27,6 +27,19 @@ class OnboardingViewController: UIViewController
     {
         super.viewDidLoad()
         setupElements()
+        
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        firstNameTextField.resignFirstResponder()
+        lastNameTextField.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return true
     }
     
     func setupElements() {

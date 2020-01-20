@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -21,6 +21,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupElements()
         // Do any additional setup after loading the view.
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return true
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
