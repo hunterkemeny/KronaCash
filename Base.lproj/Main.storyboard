@@ -617,6 +617,9 @@
                             <outlet property="delegate" destination="MNY-9e-bRI" id="hfZ-yi-E00"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="IXb-PS-6OH" kind="show" identifier="FeedShowBusiness" id="MJg-xP-GWb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWE-vN-k2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -735,6 +738,9 @@
                             <outlet property="delegate" destination="3Lz-tg-Wcw" id="26z-Cb-dWt"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="IXb-PS-6OH" kind="show" identifier="VisitedSearchBusinessSegue" id="bSM-UB-ai0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weS-Kh-Mfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1333,25 +1339,25 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byv-Xf-Auk">
                                 <rect key="frame" x="20" y="214" width="374" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGF-rF-gjX">
                                 <rect key="frame" x="20" y="278" width="374" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVh-xr-9YP">
                                 <rect key="frame" x="20" y="342" width="374" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BoE-K0-9eR">
                                 <rect key="frame" x="20" y="406" width="374" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hir-np-zY4">
-                                <rect key="frame" x="20" y="604" width="374" height="57"/>
+                                <rect key="frame" x="20" y="604" width="374" height="57.000000000000057"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hir-np-zY4" secondAttribute="height" multiplier="374:57" id="dLh-eU-0TT"/>
@@ -1668,12 +1674,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRh-GV-269">
                                 <rect key="frame" x="20" y="309" width="374" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-qk-F3f">
                                 <rect key="frame" x="20" y="383" width="374" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REI-1q-xRI">
                                 <rect key="frame" x="20" y="662" width="374" height="57"/>
@@ -1887,6 +1893,6 @@
         <image name="settingIconS" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YJL-2E-Ujv"/>
+        <segue reference="WD3-7y-MJm"/>
     </inferredMetricsTieBreakers>
 </document>

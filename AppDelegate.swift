@@ -7,7 +7,7 @@
 //
 
 
-//TODO: Make search bar links work. Fix pictures for tutorial.
+//TODO: Fix pictures for tutorial.
 
 import UIKit
 import CoreData

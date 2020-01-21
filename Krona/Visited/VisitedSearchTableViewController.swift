@@ -19,6 +19,9 @@ class VisitedSearchTableViewController: UITableViewController, UISearchControlle
         super.viewDidLoad()
         bizArray = List.getList()
         currBizArray = bizArray
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int
@@ -37,6 +40,25 @@ class VisitedSearchTableViewController: UITableViewController, UISearchControlle
         cell.setAttributes(biz: currBizArray[indexPath.row])
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        businessIcon = currBizArray[indexPath.row].icon
+        dealImage = currBizArray[indexPath.row].deals[0].image
+        promotionImage = currBizArray[indexPath.row].promotions[0].image
+        rewardImage = currBizArray[indexPath.row].rewards[0].image
+        self.performSegue(withIdentifier: "VisitedSearchBusinessSegue", sender: self)
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+       
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "VisitedSearchBusinessSegue" {
+            let detailVC = segue.destination as! BusinessTableViewController
+            detailVC.business = businessIcon
+            detailVC.deal = dealImage
+            detailVC.promotion = promotionImage
+            detailVC.reward = rewardImage
+           }
+       }
     
     // search bar:
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)

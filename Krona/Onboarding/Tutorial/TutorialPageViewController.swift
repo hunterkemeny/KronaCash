@@ -19,17 +19,17 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
     
     var pageHeadings = ["Browse the Latest Offers",
                         "Explore Your Favorites",
-                        "Refer Your Friends",
+                        "See, Deals, Promotions, and Rewards from Businesses",
                         "View Your Profile Settings"]
     
-    var pageImages = ["Feed Mockup",
-                      "Visited-100",
-                      "Screen Shot 2019-08-20 at 6.12.59 PM",
-                      "Screen Shot 2019-08-20 at 6.13.22 PM"]
+    var pageImages = ["Feed",
+                      "Favorites",
+                      "Business",
+                      "Settings"]
     
     var pageSubheadings = ["Get the latest on nearby offers that have been personalized for you.",
                            "Explore the latest offers from your favorites.",
-                           "Refer a friend and we'll add <dope shit> to both of your accounts.",
+                           "Discover all the current offers from any business on our platform.",
                            "Manage your Krona profile and settings."]
     
     var currentIndex = 0

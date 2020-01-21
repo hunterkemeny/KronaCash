@@ -22,8 +22,7 @@ class FeedViewController: UIViewController
     let feedSearchController = UISearchController(searchResultsController: nil)
     var showBusiness = "ShowBusiness"
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         List.loadBusinesses()
@@ -53,23 +52,18 @@ class FeedViewController: UIViewController
         self.navigationItem.hidesSearchBarWhenScrolling = false
         self.navigationItem.searchController?.searchBar.tintColor = UIColor.white
     }
-    
 }
 
-extension FeedViewController: UITableViewDataSource, UITableViewDelegate
-{
-    func numberOfSections(in tableView: UITableView) -> Int
-    {
+extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = feedTableView.dequeueReusableCell(withIdentifier: "EatIconsTableViewCell", for: indexPath) as! EatIconsTableViewCell
             cell.setAttributes(category: "Places to Eat")
@@ -93,26 +87,19 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate
         }
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
-    {
-        if indexPath.row == 0
-        {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
             if let cell = cell as? EatIconsTableViewCell
             {
                 cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
             }
-        }
-        else if indexPath.row == 1
-        {
+        } else if indexPath.row == 1 {
             if let cell = cell as? ShopIconsTableViewCell
             {
                 cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
             }
-        }
-        else
-        {
-            if let cell = cell as? PostTableViewCell
-            {
+        } else {
+            if let cell = cell as? PostTableViewCell {
                 cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
             }
         }
@@ -125,10 +112,8 @@ var dealImage: UIImage!
 var promotionImage: UIImage!
 var rewardImage: UIImage!
 
-extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate
-{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    {
+extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {
             return eatList.count
         } else if collectionView.tag == 1 {
@@ -139,7 +124,6 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         if collectionView.tag == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EatIconsCollectionViewCell", for: indexPath) as! EatIconsCollectionViewCell
             cell.setAttributes(biz: eatList[indexPath.row])
@@ -170,14 +154,12 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             promotionImage = eatList[indexPath.row].promotions[0].image
             rewardImage = eatList[indexPath.row].rewards[0].image
             performSegue(withIdentifier: showBusiness, sender: nil)
-            
         } else if collectionView.tag == 1 {
             businessIcon = shopList[indexPath.row].icon
             dealImage = shopList[indexPath.row].deals[0].image
             promotionImage = shopList[indexPath.row].promotions[0].image
             rewardImage = shopList[indexPath.row].rewards[0].image
             performSegue(withIdentifier: showBusiness, sender: nil)
-            
         } else {
             businessIcon = list[indexPath.row].icon
             dealImage = list[indexPath.row].deals[0].image
@@ -185,7 +167,6 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             rewardImage = list[indexPath.row].rewards[0].image
             performSegue(withIdentifier: showBusiness, sender: nil)
         }
- 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -195,7 +176,6 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
             detailVC.deal = dealImage
             detailVC.promotion = promotionImage
             detailVC.reward = rewardImage
-            
         }
     }
 }
