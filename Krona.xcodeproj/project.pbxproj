@@ -33,6 +33,8 @@
 		4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */; };
 		4C9B8B7623A6A29300A70606 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */; };
 		4CCAF18223D64D0B00831BD3 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAF18123D64D0B00831BD3 /* Promotion.swift */; };
+		4CCAF18823D7B0AE00831BD3 /* ShopIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAF18723D7B0AE00831BD3 /* ShopIconsTableViewCell.swift */; };
+		4CCAF18C23D7BAFD00831BD3 /* EatIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAF18B23D7BAFD00831BD3 /* EatIconsCollectionViewCell.swift */; };
 		7917326B23149EEF00F327C8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326A23149EEF00F327C8 /* FavoritesViewController.swift */; };
 		7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */; };
 		791732AD2317403F00F327C8 /* Krona.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 791732AB2317403F00F327C8 /* Krona.xcdatamodeld */; };
@@ -49,8 +51,6 @@
 		B7C15DECF5A9F0D63A1635B8 /* Pods_KronaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */; };
 		BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04709722F3D89C00446C39 /* PostTableViewCell.swift */; };
 		BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */; };
-		BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */; };
-		BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871C22F41E79000B80D6 /* ShopIconsTableViewCell.swift */; };
 		BA25871F22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */; };
 		BA25872122F4DFD1000B80D6 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */; };
 		BA5EAB52230B85E50035B624 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */; };
@@ -113,6 +113,8 @@
 		4C8ECFE822F7911300100FD8 /* PaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTableViewCell.swift; sourceTree = "<group>"; };
 		4C9B8B7523A6A29300A70606 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CCAF18123D64D0B00831BD3 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		4CCAF18723D7B0AE00831BD3 /* ShopIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopIconsTableViewCell.swift; sourceTree = "<group>"; };
+		4CCAF18B23D7BAFD00831BD3 /* EatIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7917326A23149EEF00F327C8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		791732AC2317403F00F327C8 /* Krona.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Krona.xcdatamodel; sourceTree = "<group>"; };
@@ -130,8 +132,6 @@
 		B5AEB4675C197C28CA78A019 /* Pods_KronaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KronaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04709722F3D89C00446C39 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatIconsTableViewCell.swift; sourceTree = "<group>"; };
-		BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EatIconsCollectionViewCell.swift; path = ../../EatIconsCollectionViewCell.swift; sourceTree = "<group>"; };
-		BA25871C22F41E79000B80D6 /* ShopIconsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShopIconsTableViewCell.swift; path = ../../ShopIconsTableViewCell.swift; sourceTree = "<group>"; };
 		BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopIconsCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -262,9 +262,9 @@
 			children = (
 				F1F8BD3022DD829C00075D33 /* FeedViewController.swift */,
 				BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */,
-				BA25871A22F419B4000B80D6 /* EatIconsCollectionViewCell.swift */,
-				BA25871C22F41E79000B80D6 /* ShopIconsTableViewCell.swift */,
+				4CCAF18B23D7BAFD00831BD3 /* EatIconsCollectionViewCell.swift */,
 				BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */,
+				4CCAF18723D7B0AE00831BD3 /* ShopIconsTableViewCell.swift */,
 				BA04709722F3D89C00446C39 /* PostTableViewCell.swift */,
 				BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */,
 				7985DB58231F364E006D2719 /* Feed Search */,
@@ -704,7 +704,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8ECFDE22F67FD600100FD8 /* HistoryTableViewController.swift in Sources */,
-				BA25871D22F41E79000B80D6 /* ShopIconsTableViewCell.swift in Sources */,
 				7985DB5A231F3688006D2719 /* FeedSearchLabelTableViewCell.swift in Sources */,
 				794B1E5D2328864C002D30C8 /* FeedSearchDealTableViewCell.swift in Sources */,
 				7985DB63231F406E006D2719 /* DealsSearchTableViewCell.swift in Sources */,
@@ -720,7 +719,6 @@
 				4C4A987D233D73CC004E7A55 /* BaseViewController.swift in Sources */,
 				251B4DC122F792EB0085BB76 /* Reward.swift in Sources */,
 				BA04709822F3D89C00446C39 /* PostTableViewCell.swift in Sources */,
-				BA25871B22F419B4000B80D6 /* EatIconsCollectionViewCell.swift in Sources */,
 				251B4DBF22F7922F0085BB76 /* Deal.swift in Sources */,
 				BA25871922F414FE000B80D6 /* EatIconsTableViewCell.swift in Sources */,
 				794B1E5B23287541002D30C8 /* VisitedSearchTableViewCell.swift in Sources */,
@@ -729,6 +727,7 @@
 				BA25872122F4DFD1000B80D6 /* PostCollectionViewCell.swift in Sources */,
 				4C8ECFE922F7911300100FD8 /* PaymentTableViewCell.swift in Sources */,
 				BA5EAB54230B8C0A0035B624 /* TutorialViewController.swift in Sources */,
+				4CCAF18823D7B0AE00831BD3 /* ShopIconsTableViewCell.swift in Sources */,
 				F1F8BD3122DD829C00075D33 /* FeedViewController.swift in Sources */,
 				7917326D2314A02200F327C8 /* FavoritesTableViewCell.swift in Sources */,
 				791732AD2317403F00F327C8 /* Krona.xcdatamodeld in Sources */,
@@ -737,6 +736,7 @@
 				7985DB5E231F36C5006D2719 /* FeedSearchBizTableViewCell.swift in Sources */,
 				F12DDC7E22E57E13008114D7 /* SettingsLabelTableViewController.swift in Sources */,
 				258CC31823120A170011EF9A /* List.swift in Sources */,
+				4CCAF18C23D7BAFD00831BD3 /* EatIconsCollectionViewCell.swift in Sources */,
 				25C4ADC022E94C83007A7768 /* VisitedViewController.swift in Sources */,
 				4C8ECFE722F7905900100FD8 /* Payment.swift in Sources */,
 				4C8ECFE222F6806F00100FD8 /* TransactionHistory.swift in Sources */,
