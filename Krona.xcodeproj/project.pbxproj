@@ -93,7 +93,7 @@
 		258CC31723120A170011EF9A /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitedViewController.swift; sourceTree = "<group>"; };
 		25DE4C12230B158F00635251 /* DealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
-		25F39E2C2306588700A46381 /* BusinessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessPage.swift; path = "Krona/Business Page/BusinessPage.swift"; sourceTree = SOURCE_ROOT; };
+		25F39E2C2306588700A46381 /* BusinessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BusinessPage.swift; path = "Krona/Depracated/Business Page/BusinessPage.swift"; sourceTree = SOURCE_ROOT; };
 		25F39E3223065A5200A46381 /* RewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCell.swift; sourceTree = "<group>"; };
 		2D6B9551B8A736AA2468B353 /* Pods-KronaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KronaTests.release.xcconfig"; path = "Target Support Files/Pods-KronaTests/Pods-KronaTests.release.xcconfig"; sourceTree = "<group>"; };
 		408B6906ED5C013EA6E621ED /* Pods_Krona_KronaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Krona_KronaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,11 +229,7 @@
 		258CC31A23120C7E0011EF9A /* Business Page */ = {
 			isa = PBXGroup;
 			children = (
-				25DE4C12230B158F00635251 /* DealCell.swift */,
-				25F39E2C2306588700A46381 /* BusinessPage.swift */,
 				4C0E0D6023D1127E00105BC6 /* BusinessTableViewController.swift */,
-				25F39E3223065A5200A46381 /* RewardCell.swift */,
-				7985DB5F231F4021006D2719 /* Deals Search */,
 			);
 			path = "Business Page";
 			sourceTree = "<group>";
@@ -294,10 +290,8 @@
 		4C3B45AF22EF64B00040C2C4 /* Depracated */ = {
 			isa = PBXGroup;
 			children = (
-				F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */,
-				4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */,
-				4C8ECFE322F7834300100FD8 /* Transaction History */,
-				4C164A6B22F7BAAB00C0733E /* Payment */,
+				4CCAF18E23D8028600831BD3 /* Settings Page */,
+				4CCAF18D23D8027E00831BD3 /* Business Page */,
 			);
 			path = Depracated;
 			sourceTree = "<group>";
@@ -319,6 +313,28 @@
 				4C8ECFE122F6806F00100FD8 /* TransactionHistory.swift */,
 			);
 			path = "Transaction History";
+			sourceTree = "<group>";
+		};
+		4CCAF18D23D8027E00831BD3 /* Business Page */ = {
+			isa = PBXGroup;
+			children = (
+				25F39E2C2306588700A46381 /* BusinessPage.swift */,
+				25DE4C12230B158F00635251 /* DealCell.swift */,
+				25F39E3223065A5200A46381 /* RewardCell.swift */,
+				7985DB5F231F4021006D2719 /* Deals Search */,
+			);
+			path = "Business Page";
+			sourceTree = "<group>";
+		};
+		4CCAF18E23D8028600831BD3 /* Settings Page */ = {
+			isa = PBXGroup;
+			children = (
+				F12DDC7D22E57E13008114D7 /* SettingsLabelTableViewController.swift */,
+				4C3B45AB22EE62EA0040C2C4 /* SettingsSection.swift */,
+				4C164A6B22F7BAAB00C0733E /* Payment */,
+				4C8ECFE322F7834300100FD8 /* Transaction History */,
+			);
+			path = "Settings Page";
 			sourceTree = "<group>";
 		};
 		7985DB58231F364E006D2719 /* Feed Search */ = {
@@ -344,11 +360,11 @@
 		79F535E323149AA100C6A599 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				4C4A987C233D73CC004E7A55 /* BaseViewController.swift */,
+				4C4A987E233D7DCD004E7A55 /* LoginViewController.swift */,
 				BA5EAB51230B85E50035B624 /* OnboardingViewController.swift */,
 				7917326A23149EEF00F327C8 /* FavoritesViewController.swift */,
 				7917326C2314A02200F327C8 /* FavoritesTableViewCell.swift */,
-				4C4A987C233D73CC004E7A55 /* BaseViewController.swift */,
-				4C4A987E233D7DCD004E7A55 /* LoginViewController.swift */,
 				79F535E423149AB600C6A599 /* Tutorial */,
 			);
 			path = Onboarding;
@@ -357,8 +373,8 @@
 		79F535E423149AB600C6A599 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */,
 				BA5EAB53230B8C0A0035B624 /* TutorialViewController.swift */,
+				BA5EAB55230B96480035B624 /* TutorialPageViewController.swift */,
 				BA5EAB57230B973E0035B624 /* TutorialContentViewController.swift */,
 			);
 			path = Tutorial;

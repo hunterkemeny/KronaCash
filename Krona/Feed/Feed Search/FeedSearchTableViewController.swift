@@ -24,6 +24,10 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
     var promotionArray = [Promotion]()
     var currPromotionArray = [Promotion]()
     var bizPromotionArray = [Business]()
+    var businessIcon: UIImage!
+    var dealImage: UIImage!
+    var promotionImage: UIImage!
+    var rewardImage: UIImage!
     
     static var typing = false
     

@@ -9,18 +9,25 @@
 import UIKit
 import CoreData
 
-class FeedViewController: UIViewController
-{
-    //ERROR: When you download the app, there is sometimes two of every store. In the search bar, there are two/three of every store on the first download, then when the app is closed and reopened there are the correct amount
-    //ERROR: the last collection view is cut off by the icons at the bottom
+class FeedViewController: UIViewController {
+    //ERROR 1: When you download the app, there is sometimes two of every store. In the search bar, there are two/three of every store on the first download, then when the app is closed and reopened there are the correct amount
+    //ERROR 2: the last collection view is cut off by the icons at the bottom
+    
+    
     var list = [Business]()
     var eatList = [Business]()
     var shopList = [Business]()
     
-    @IBOutlet weak var feedTableView: UITableView!
+    var showBusiness = "ShowBusiness"
+    
+    var businessIcon: UIImage!
+    var dealImage: UIImage!
+    var promotionImage: UIImage!
+    var rewardImage: UIImage!
     
     let feedSearchController = UISearchController(searchResultsController: nil)
-    var showBusiness = "ShowBusiness"
+    
+    @IBOutlet weak var feedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,11 +113,7 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-var businessIcon: UIImage!
 
-var dealImage: UIImage!
-var promotionImage: UIImage!
-var rewardImage: UIImage!
 
 extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

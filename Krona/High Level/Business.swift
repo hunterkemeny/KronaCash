@@ -9,21 +9,23 @@
 import UIKit
 
 class Business {
+    
+    // MARK: - Properties
+    
     var name: String?
-    var deal: UIImage?
-    var reward: UIImage?
-    var promotion: UIImage?
     var icon: UIImage?
+    var distance: Double?
+    var category: String?
+    var classification: Classification?
     var isFavorite: Bool?
-    var offersGroup: Bool?
+
+    // Declare lists of objects associated with a Business object.
+    
     var deals = [Deal]()
     var rewards = [Reward]()
     var promotions = [Promotion]()
     
-    var distance: Double?
-    var classification: Classification?
-    var category: String?
-    
+    // MARK: - INIT
     init (name: String, icon: UIImage, distance: Double, category: String, classification: Classification) {
         self.name = name
         self.icon = icon
@@ -33,11 +35,13 @@ class Business {
         self.isFavorite = false // changed from true
     }
     
+    // MARK: - Methods
+    
     func addDeal(deal: Deal) {
         deals.append(deal)
     }
     
-    func addReward(reward:Reward) {
+    func addReward(reward: Reward) {
         rewards.append(reward)
     }
     

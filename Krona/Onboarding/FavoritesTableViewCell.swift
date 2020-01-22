@@ -8,27 +8,24 @@
 
 import UIKit
 
-class FavoritesTableViewCell: UITableViewCell
-{
+class FavoritesTableViewCell: UITableViewCell {
+    
+    // MARK: - IBOutlet
     @IBOutlet weak var bizNameLabel: UILabel!
     @IBOutlet weak var bizIconImage: UIImageView!
     
-    func setAttributes(biz: Business)
-    {
+    // MARK: - Helper Function
+    
+    func setAttributes(biz: Business) {
+        // Set the values and style for each cell the in the FavoritesViewController.
+        
         bizNameLabel.text = biz.name
         bizIconImage.image = biz.icon
         
-        //Image View setup
+        // Stylize the icon for each business.
         bizIconImage.layer.borderWidth = 0
         bizIconImage.layer.masksToBounds = false
         bizIconImage.layer.cornerRadius = bizIconImage.frame.height/3
         bizIconImage.clipsToBounds = true
     }
-    
-    override func awakeFromNib()
-    {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

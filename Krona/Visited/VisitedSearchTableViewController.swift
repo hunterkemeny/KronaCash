@@ -13,6 +13,10 @@ class VisitedSearchTableViewController: UITableViewController, UISearchControlle
     //ERROR: On the first download, there tends to be three of every store, but after closing and reopening the app, it goes back to the correct amount
     var bizArray = [Business]()
     var currBizArray = [Business]()
+    var businessIcon: UIImage!
+    var dealImage: UIImage!
+    var promotionImage: UIImage!
+    var rewardImage: UIImage!
     
     override func viewDidLoad()
     {

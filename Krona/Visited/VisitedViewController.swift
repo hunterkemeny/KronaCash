@@ -19,6 +19,10 @@ class VisitedViewController: UIViewController, UITableViewDataSource, UITableVie
     var favoriteList = [Business]()
     var list = [Business]()
     var showBusiness = "VisitedShowBusiness"
+    var businessIcon: UIImage!
+    var dealImage: UIImage!
+    var promotionImage: UIImage!
+    var rewardImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()

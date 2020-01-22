@@ -8,6 +8,7 @@
 
 import UIKit
 
+/*
 class DealsSearchTableViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate
 {
     var bp = BusinessPage()
@@ -54,6 +55,7 @@ class DealsSearchTableViewController: UITableViewController, UISearchControllerD
     }
 }
 
+ */
 /*extension DealsSearchTableViewController: UISearchBarDelegate
 {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int)

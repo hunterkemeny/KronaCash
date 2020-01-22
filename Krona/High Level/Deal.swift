@@ -8,31 +8,14 @@
 
 import UIKit
 
-class Deal
-{
-    //TYPE1
+class Deal {
+    // MARK: - Properties
     var name: String?
     var description: String?
-    
-    //TYPE2
     var image: UIImage?
-    
-    
-    //TYPE1
-    init(name:String, description:String)
-    {
-        self.name = name
-        self.description = description
-    }
-    
-    //TYPE2
-    init(image: UIImage?){
-        self.image = image
-    }
-    
-    //TYPE3
-    init(name: String, description: String, image: UIImage?)
-    {
+
+    // MARK: - INIT
+    init(name: String, description: String, image: UIImage?) {
         self.name = name
         self.description = description
         self.image = image

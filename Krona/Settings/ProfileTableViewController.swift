@@ -11,16 +11,10 @@ import UIKit
 //private let reuseIdentifier = "ProfileTableViewCell"
 
 class ProfileTableViewController: UITableViewController {
-
-
-    //MARK: Properties
-    
-    //var userInfoHeader: UserInfoHeader!
     
     // MARK: - Init
     override func viewDidLoad() {
         super.viewDidLoad()
-        //configureUI()
     }
     
     //MARK: IBAction
@@ -40,25 +34,4 @@ class ProfileTableViewController: UITableViewController {
     @IBAction func didTapDonate(_ sender: Any) {
         UIApplication.shared.openURL(URL(string: "https://www.paypal.com/donate/?token=a2t0dPo1_bBqJoO4SYm56YI1bwWn4JW93uTB3liO8B43QJZsbY4mx4vZdvjY6yq_C_EZM0&fromUL=true&country.x=US&locale.x=en_US")!)
     }
-    
-    //MARK: Helper Functions
-    
-    /*
-    func configureTableView() {
-        let frame = CGRect(x: 0, y: 88, width: view.frame.width, height: 100)
-        userInfoHeader = UserInfoHeader(frame: frame)
-        tableView.tableHeaderView = userInfoHeader
-    }
-    
-    func configureUI() {
-        configureTableView()
-        
-        //TODO: Fix Colors and style
-        navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor(red: 107/255, green: 31/255, blue: 236/255, alpha: 1)
-        navigationItem.title = "Profile"
-    }
- */
 }

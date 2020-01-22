@@ -10,11 +10,22 @@ import UIKit
 
 class List {
     
+    // MARK: - Properties
+    
+    // Declare lists for each type of business.
+    
     static var eatList = [Business]()
     static var shopList = [Business]()
+    
+    // Declare list for all businesses.
     static var list = [Business]()
     
+    // MARK: - Methods
+    
     static func loadBusinesses() {
+        /* Create Business object for each business. Create deals, promotions, and rewards for each business. Add each business to the list of the category
+           it corresponds to, as well as the list of all businesses.
+        */
         
         let chipotle = Business(name: "Chipotle", icon: UIImage(named: "Chipotle")!, distance: 0.3, category: "Eat", classification: .sponsored)
         chipotle.addDeal(deal: Deal(name: "Chipotle", description: "Free guac or queso", image: UIImage(named: "chipotleDeal")!))
@@ -85,7 +96,6 @@ class List {
         nordstrom.addReward(reward: Reward(name: "Nordstrom", description: "40% off Nike", image: UIImage(named: "NordstromReward")!))
         shopList.append(nordstrom)
         list.append(nordstrom)
-        
     }
     
     static func getEatList() -> [Business] {

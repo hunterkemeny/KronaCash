@@ -8,7 +8,6 @@
 
 import UIKit
 class UserInfoHeader: UIView {
-    //TODO: Fix design and colors
     // MARK: - Properties
     
     let profileImageView: UIImageView = {

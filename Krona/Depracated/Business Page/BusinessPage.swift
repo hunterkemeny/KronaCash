@@ -6,6 +6,7 @@
 //  Copyright © 2019 Krona Technologies Incorporated. All rights reserved.
 //
 
+/*
 import UIKit
 
 class BusinessPage: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
@@ -14,6 +15,7 @@ class BusinessPage: UIViewController, UICollectionViewDelegate, UICollectionView
     @IBOutlet weak var rewardTableView: UITableView!
     
     // TODO: DEALS EVENTUALLY NEED TO BE PULLED FROM LIST CLASS WHEN BUTTON PROBLEM SOLVED
+    
     
     var dealArray = [Deal(name: "Free", description: "This is only a placeholder deal that is beingz used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Buy 1, Get 1 Free", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "10% off", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "First Meal Free", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long."), Deal(name: "Appetizer - FREE", description: "This is only a placeholder deal that is being used to test the code as well as constraints. That is why this message is particularly long.")]
     
@@ -78,3 +80,4 @@ extension BusinessPage: UITableViewDataSource, UITableViewDelegate
         return 1
     }
 }*/
+*/

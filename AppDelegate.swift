@@ -6,9 +6,6 @@
 //  Copyright © 2019 Krona Technologies Incorporated. All rights reserved.
 //
 
-
-//TODO: Fix pictures for tutorial.
-
 import UIKit
 import CoreData
 import Firebase
@@ -18,24 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         var vc: UIViewController
-        if(UserDefaults.standard.value(forKey: "firstName") as? String) == nil
-        {
-            // show onboarding screen
+        
+        // Determine ViewController to show when the app is opened.
+        if(UserDefaults.standard.value(forKey: "firstName") as? String) == nil {
+            //Show Onboarding.
             vc = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
-        }
-        else
-        {
-            // show main screen
+        } else {
+            //Show main TabViewController.
             vc = storyboard.instantiateInitialViewController()!
         }
+        
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
+        
+        // Add Firebase functionality.
         FirebaseApp.configure()
         return true
     }

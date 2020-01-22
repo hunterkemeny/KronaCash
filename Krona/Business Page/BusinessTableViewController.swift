@@ -16,7 +16,6 @@ class BusinessTableViewController: UITableViewController {
     @IBOutlet weak var rewardsImage: UIImageView!
     
     var business: UIImage!
-    var name: String!
     var deal: UIImage!
     var promotion: UIImage!
     var reward: UIImage!
