@@ -18,8 +18,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
-    // MARK: - INIT
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupElements()
@@ -32,6 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loginTapped(_ sender: UIButton) {
         // Login existing user stored in Firestore DB.
+        
         // Create reference to storyboard.
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
@@ -80,10 +79,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // MARK: - Helper Functions
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Enable functionality for return key.
+        
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         return true
@@ -93,6 +91,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func setupElements() {
         // Hide the error label.
+        
         errorLabel.alpha = 0
     }
     
@@ -122,6 +121,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     static func isPasswordValid(_ password : String) -> Bool {
         // Determines if password meets basic standards using Regular Expressions.
+        
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }

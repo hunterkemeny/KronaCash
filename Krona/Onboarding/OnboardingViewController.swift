@@ -21,7 +21,6 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
-    // MARK: - INIT
     override func viewDidLoad() {
         super.viewDidLoad()
         setupElements()
@@ -99,8 +98,6 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // MARK: - Helper Functions
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Enable functionality for return key.
         
@@ -145,6 +142,7 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
 
     static func isPasswordValid(_ password : String) -> Bool {
         // Determines if password meets basic standards using Regular Expressions.
+        
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }

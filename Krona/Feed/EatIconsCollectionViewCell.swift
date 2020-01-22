@@ -8,12 +8,17 @@
 
 import UIKit
 
-class EatIconsCollectionViewCell: UICollectionViewCell
-{
+class EatIconsCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var companyIcon: UIImageView!
     
-    func setAttributes(biz: Business)
-    {
+    // MARK: - Methods
+    
+    func setAttributes(biz: Business) {
+        // Sets the company icon for each collectoinViewCell.
+        
         companyIcon.image = biz.icon
     }
     

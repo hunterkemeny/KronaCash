@@ -16,8 +16,6 @@ class BaseViewController: UIViewController {
     @IBOutlet weak var mainLogin: UIButton!
     @IBOutlet weak var mainSignup: UIButton!
     
-    // MARK: - INIT
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

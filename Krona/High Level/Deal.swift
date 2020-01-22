@@ -9,12 +9,15 @@
 import UIKit
 
 class Deal {
+    
     // MARK: - Properties
+    
     var name: String?
     var description: String?
     var image: UIImage?
 
     // MARK: - INIT
+    
     init(name: String, description: String, image: UIImage?) {
         self.name = name
         self.description = description

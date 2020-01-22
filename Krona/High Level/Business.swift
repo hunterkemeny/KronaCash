@@ -20,7 +20,6 @@ class Business {
     var isFavorite: Bool?
 
     // Declare lists of objects associated with a Business object.
-    
     var deals = [Deal]()
     var rewards = [Reward]()
     var promotions = [Promotion]()

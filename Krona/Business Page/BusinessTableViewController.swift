@@ -10,10 +10,14 @@ import UIKit
 
 class BusinessTableViewController: UITableViewController {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var businessImage: UIImageView!
     @IBOutlet weak var dealsImage: UIImageView!
     @IBOutlet weak var promotionsImage: UIImageView!
     @IBOutlet weak var rewardsImage: UIImageView!
+    
+    // MARK: - Properties
     
     var business: UIImage!
     var deal: UIImage!
@@ -24,6 +28,7 @@ class BusinessTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Sets each image in viewController to the image given by the respective property.
         businessImage.image = business
         dealsImage.image = deal
         promotionsImage.image = promotion

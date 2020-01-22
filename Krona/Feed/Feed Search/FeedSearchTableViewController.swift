@@ -8,33 +8,51 @@
 
 import UIKit
 
-//TODO: Add links to business page from searchbar
-
-class FeedSearchTableViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate
-{
+class FeedSearchTableViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate {
+    // ERROR: Can't get searchbar links to segue to the correct business page.
+    // TODO: Implement suggestion cells with not typing.
+    
+    // MARK: - Properties
+    
+    // Categories for types of businesses.
     var categories = ["Most Popular", "New to Krona", "Food", "Shopping", "Apparel", "Groceries", "Entertainment", "Education", "Accessories", "Finance"]
+    
+    // Initialize lists that correspond to each business/deal/promotion/reward.
     var bizArray = [Business]()
-    var currBizArray = [Business]()
     var dealArray = [Deal]()
-    var currDealArray = [Deal]()
-    var bizDealArray = [Business]()
     var rewardArray = [Reward]()
-    var currRewardArray = [Reward]()
-    var bizRewardArray = [Business]()
     var promotionArray = [Promotion]()
+    
+    // Initialize lists that correspond to each business/deal/promotion/reward appearing in search.
+    var currBizArray = [Business]()
+    var currDealArray = [Deal]()
+    var currRewardArray = [Reward]()
     var currPromotionArray = [Promotion]()
+    
+    // Initialize lists that correspond to each business associated with a deal/promotion/reward.
+    var bizDealArray = [Business]()
+    var bizRewardArray = [Business]()
     var bizPromotionArray = [Business]()
+    
+    // Declare image types for each business that appears in the search.
     var businessIcon: UIImage!
     var dealImage: UIImage!
     var promotionImage: UIImage!
     var rewardImage: UIImage!
     
+    // User has not started typing.
     static var typing = false
     
     override func viewDidLoad() {
+        // Setup Searchbar view controller.
+        
         super.viewDidLoad()
+        
+        // Generate a list of all businesses.
         bizArray = List.getList()
         currBizArray = bizArray
+        
+        // Setup lists for each type of advertisement.
         for biz in bizArray {
             for deal in biz.deals {
                 dealArray.append(deal)
@@ -46,46 +64,49 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
                 promotionArray.append(promotion)
             }
         }
+        
+        // create a copy of each advertisement list to modify based on search criteria.
         currDealArray = dealArray
         currRewardArray = rewardArray
         currPromotionArray = promotionArray
     }
     
-    // TODO: Implement suggestion cells when not typing
+    // MARK: - Typing LifeCycle Functions
     
-    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool
-    {
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         FeedSearchTableViewController.typing = true
         return true
     }
     
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar)
-    {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         FeedSearchTableViewController.typing = true
     }
     
-    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool
-    {
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
         FeedSearchTableViewController.typing = false
         return true
     }
     
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar)
-    {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         FeedSearchTableViewController.typing = false
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
-    {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         FeedSearchTableViewController.typing = false
     }
+    
+    // MARK: - Setup TableView
     
     override func numberOfSections(in tableView: UITableView) -> Int {
+        // Return four sections when typing that correspond to business/deal/promotion/reward types.
+        
         if FeedSearchTableViewController.typing { return 4 }
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Return the number of rows per section based on the type of section (business/deal/promotion/reward).
+        
         if FeedSearchTableViewController.typing {
             if section == 0 {
                 return currBizArray.count
@@ -101,6 +122,10 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        /*
+        Instantiate a TableViewCell for each business/deal/promotion/reward and set its attributes to correspond to the respective type.
+        */
+        
         if FeedSearchTableViewController.typing {
             if indexPath.section == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchBizTableViewCell") as! FeedSearchBizTableViewCell
@@ -120,18 +145,30 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
                 return cell
             }
         }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSearchLabelTableViewCell") as! FeedSearchLabelTableViewCell
         cell.setAttributes(name: categories[indexPath.row])
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        /*
+         Associates corresponding business image attributes with every row.
+         If tapped, each cell will utilize the FeedShowBusiness segue to instantiate a unique BusinessTableViewController.
+        */
+        
+        // Determine if section corresponds to business/deal/promotion/reward.
         if indexPath.section == 0 {
+            // Associate business attributes with each TableViewCell.
             businessIcon = currBizArray[indexPath.row].icon
             dealImage = currBizArray[indexPath.row].deals[0].image
             promotionImage = currBizArray[indexPath.row].promotions[0].image
             rewardImage = currBizArray[indexPath.row].rewards[0].image
+            
+            // Perform segue to instantiate a BusinessTableViewController using the previously initialized business attributes.
             self.performSegue(withIdentifier: "FeedShowBusiness", sender: self)
+            
+            // Deselect the row so that it does not stay highlighted after segue.
             tableView.deselectRow(at: indexPath, animated: false)
         } else if indexPath.section == 1 {
             businessIcon = bizDealArray[indexPath.row].icon
@@ -155,23 +192,23 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
             self.performSegue(withIdentifier: "FeedShowBusiness", sender: self)
             tableView.deselectRow(at: indexPath, animated: false)
         }
-        
     }
        
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "FeedShowBusiness" {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Sets up unique BusinessTableViewController after collectionViewCell is tapped.
+        
+        if segue.identifier == "FeedShowBusiness" {
             let detailVC = segue.destination as! BusinessTableViewController
             detailVC.business = businessIcon
             detailVC.deal = dealImage
             detailVC.promotion = promotionImage
             detailVC.reward = rewardImage
-           }
-       }
+        }
+    }
     
-    
-    // TODO: Can't get links to match up with businesses
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
-    {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // Sets values for each currArray based on which business/deal/reward/promotion corresponds to the search.
+        
         let searchTerms = searchText.components(separatedBy: " ").filter { $0 != "" }
         
         currBizArray = bizArray.filter { biz in
@@ -187,14 +224,6 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
                 if !(deal.name!.lowercased().contains(term.lowercased()) || deal.description!.lowercased().contains(term.lowercased()))
                 { return false }
             }
-            // Attempted solution for searchbar link issues
-            for deal in currDealArray {
-                for biz in bizArray {
-                    if deal.name == biz.name {
-                        bizDealArray.append(biz)
-                    }
-                }
-            }
             return true
         }
         
@@ -204,13 +233,6 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
                 if !(promotion.name!.lowercased().contains(term.lowercased()) || promotion.description!.lowercased().contains(term.lowercased()))
                 { return false }
             }
-            for promotion in currPromotionArray {
-                for biz in bizArray {
-                    if promotion.name == biz.name {
-                        bizPromotionArray.append(biz)
-                    }
-                }
-            }
             return true
         }
         
@@ -219,17 +241,8 @@ class FeedSearchTableViewController: UITableViewController, UISearchControllerDe
                 if !(reward.name!.lowercased().contains(term.lowercased()) || reward.description!.lowercased().contains(term.lowercased()))
                 { return false }
             }
-            for reward in currRewardArray {
-                for biz in bizArray {
-                    if reward.name == biz.name {
-                        bizRewardArray.append(biz)
-                        print(biz.name)
-                    }
-                }
-            }
             return true
         }
-        
         tableView.reloadData()
     }
 }

@@ -8,24 +8,25 @@
 
 import UIKit
 
-class ShopIconsTableViewCell: UITableViewCell
-{
+class ShopIconsTableViewCell: UITableViewCell {
+    
+    // MARK: - IBOutlets
+    
     @IBOutlet private weak var shopIconsCollectionView: UICollectionView!
     @IBOutlet private weak var collectionLabel: UILabel!
     
-    func setAttributes(category: String)
-    {
-        collectionLabel.text = category
-    }
-}
-
-extension ShopIconsTableViewCell
-{
-    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int)
-    {
+    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int) {
         shopIconsCollectionView.delegate = dataSourceDelegate
         shopIconsCollectionView.dataSource = dataSourceDelegate
         shopIconsCollectionView.tag = row
         shopIconsCollectionView.reloadData()
+    }
+    
+    // MARK: - Methods
+    
+    func setAttributes(category: String) {
+        // Sets the label for ShopIconsTableViewCell.
+        
+        collectionLabel.text = category
     }
 }

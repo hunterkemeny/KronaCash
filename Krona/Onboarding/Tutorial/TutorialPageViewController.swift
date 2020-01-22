@@ -13,6 +13,9 @@ protocol TutorialPageViewControllerDelegate: class {
 }
 
 class TutorialPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    
+    // MARK: - Properties
+    
     weak var tutorialDelegate: TutorialPageViewControllerDelegate?
     
     // Provide the information for each page in the tutorial. 
@@ -20,20 +23,21 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
                         "Explore Your Favorites",
                         "See, Deals, Promotions, and Rewards from Businesses",
                         "View Your Profile Settings"]
-    
     var pageImages = ["Feed",
                       "Favorites",
                       "Business",
                       "Settings"]
-    
     var pageSubheadings = ["Get the latest on nearby offers that have been personalized for you.",
                            "Explore the latest offers from your favorites.",
                            "Discover all the current offers from any business on our platform.",
                            "Manage your Krona profile and settings."]
     
+    // Track the current page of the tutorial
     var currentIndex = 0
 
     override func viewDidLoad() {
+        // Setup ViewController.
+        
         super.viewDidLoad()
         dataSource = self
         delegate = self
@@ -44,7 +48,11 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
         }
     }
     
+    // MARK: - Tutorial LifeCycle Functions
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        // Go back one page in the tutorial.
+        
         var index = (viewController as! TutorialContentViewController).index
         index -= 1
         
@@ -52,6 +60,8 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        // Go forward one page in the tutorial.
+        
         var index = (viewController as! TutorialContentViewController).index
         index += 1
         
@@ -59,11 +69,14 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
     }
     
     func contentViewController(at index: Int) -> TutorialContentViewController? {
+        // Generate the correct page of the tutorial.
+        
+        // If index out of range, return nil.
         if index < 0 || index >= pageHeadings.count {
             return nil
         }
         
-        // Create a new view controller and pass suitable data
+        // Set the correct data to be displayed based on the current page of the tutorial.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "TutorialContentViewController") as? TutorialContentViewController {
             pageContentViewController.heading = pageHeadings[index]
@@ -77,6 +90,8 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
     }
     
     func forwardPage() {
+        // Go forward in the tutorial. 
+        
         currentIndex += 1
         if let nextViewController = contentViewController(at: currentIndex) {
             setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
@@ -84,6 +99,8 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerData
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        // Transition ViewControllers.
+        
         if completed {
             if let contentViewController = pageViewController.viewControllers?.first as? TutorialContentViewController {
                 currentIndex = contentViewController.index

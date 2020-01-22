@@ -8,21 +8,16 @@
 
 import UIKit
 
-class FeedSearchLabelTableViewCell: UITableViewCell
-{
-    @IBOutlet private weak var nameLabel: UILabel! /*{
-        didSet {
-            print("nameLabel: \(nameLabel)")
-        }
-    }*/
+class FeedSearchLabelTableViewCell: UITableViewCell {
     
-    func setAttributes(name: String)
-    {
+    // MARK: - IBOutlets
+    @IBOutlet private weak var nameLabel: UILabel!
+    
+    // MARK: - Methods
+    
+    func setAttributes(name: String) {
+        // Set attributes for each label that appears in the Searchbar.
+        
         nameLabel.text = name
-    }
-    
-    override func awakeFromNib()
-    {
-        super.awakeFromNib()
     }
 }

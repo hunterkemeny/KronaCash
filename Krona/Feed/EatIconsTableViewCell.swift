@@ -8,25 +8,26 @@
 
 import UIKit
 
-class EatIconsTableViewCell: UITableViewCell
-{
+class EatIconsTableViewCell: UITableViewCell {
+    
+    // MARK: - IBOutlets
+    
     @IBOutlet private weak var eatIconsCollectionView: UICollectionView!
     @IBOutlet private weak var collectionLabel: UILabel!
     
-    func setAttributes(category: String)
-    {
-        collectionLabel.text = category
-    }
-}
-
-extension EatIconsTableViewCell
-{
-    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int)
-    {
+    func setCollectionViewDataSourceDelegate(dataSourceDelegate: UICollectionViewDataSource & UICollectionViewDelegate, forRow row: Int) {
         eatIconsCollectionView.delegate = dataSourceDelegate
         eatIconsCollectionView.dataSource = dataSourceDelegate
         eatIconsCollectionView.tag = row
         eatIconsCollectionView.reloadData()
+    }
+    
+    // MARK: - Methods
+    
+    func setAttributes(category: String) {
+        // Sets the label for EatIconsTableViewCell.
+        
+        collectionLabel.text = category
     }
 }
 

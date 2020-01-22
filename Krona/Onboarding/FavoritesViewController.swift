@@ -21,7 +21,6 @@ class FavoritesViewController: UIViewController {
     // List of all businesses that the user chooses as favorites.
     var favBiz = [Int]()
     
-    // MARK: - INIT
     override func viewDidLoad() {
         super.viewDidLoad()
         // Initialize Business objects for all businesses; initialize current Deal objects, Promotion objects, and Reward objects associated with each Business object.
@@ -32,8 +31,6 @@ class FavoritesViewController: UIViewController {
         favoritesTableView.dataSource = self
         favoritesTableView.delegate = self
     }
-    
-    // MARK: - Helper Functions
     
     func goToSegue(sender: UIBarButtonItem) {
         // Segue from FavoritesViewController to FeedViewController.

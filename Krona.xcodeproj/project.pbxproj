@@ -259,8 +259,8 @@
 				F1F8BD3022DD829C00075D33 /* FeedViewController.swift */,
 				BA25871822F414FE000B80D6 /* EatIconsTableViewCell.swift */,
 				4CCAF18B23D7BAFD00831BD3 /* EatIconsCollectionViewCell.swift */,
-				BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */,
 				4CCAF18723D7B0AE00831BD3 /* ShopIconsTableViewCell.swift */,
+				BA25871E22F41F2C000B80D6 /* ShopIconsCollectionViewCell.swift */,
 				BA04709722F3D89C00446C39 /* PostTableViewCell.swift */,
 				BA25872022F4DFD1000B80D6 /* PostCollectionViewCell.swift */,
 				7985DB58231F364E006D2719 /* Feed Search */,
@@ -280,9 +280,9 @@
 			isa = PBXGroup;
 			children = (
 				25C4ADBF22E94C83007A7768 /* VisitedViewController.swift */,
+				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
 				794B1E58232871F1002D30C8 /* VisitedSearchTableViewController.swift */,
 				794B1E5A23287541002D30C8 /* VisitedSearchTableViewCell.swift */,
-				F1EEDD5122E93E4400DEC2E6 /* RestaurantTableViewCell.swift */,
 			);
 			path = Visited;
 			sourceTree = "<group>";

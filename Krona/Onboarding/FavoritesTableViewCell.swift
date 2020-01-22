@@ -14,11 +14,12 @@ class FavoritesTableViewCell: UITableViewCell {
     @IBOutlet weak var bizNameLabel: UILabel!
     @IBOutlet weak var bizIconImage: UIImageView!
     
-    // MARK: - Helper Function
+    // MARK: - Methods
     
     func setAttributes(biz: Business) {
         // Set the values and style for each cell the in the FavoritesViewController.
         
+        // Set the name and icon for each business. 
         bizNameLabel.text = biz.name
         bizIconImage.image = biz.icon
         
