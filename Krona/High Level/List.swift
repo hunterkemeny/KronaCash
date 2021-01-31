@@ -29,8 +29,8 @@ class List {
         
         let chipotle = Business(name: "Chipotle", icon: UIImage(named: "Chipotle")!, distance: 0.3, category: "Eat", classification: .sponsored)
         chipotle.addDeal(deal: Deal(name: "Chipotle", description: "Free guac or queso", image: UIImage(named: "chipotleDeal")!))
-        chipotle.addPromotion(promotion: Promotion(name: "Chipotle", description: "FREE Chipotle at 1250 points", image: UIImage(named: "ChipotlePromotion")!))
-        chipotle.addReward(reward: Reward(name: "Chipotle", description: "Get 10 points per $1 spent", image: UIImage(named: "ChipotleReward")!))
+        chipotle.addPromotion(promotion: Promotion(name: "Chipotle", description: "FREE Chipotle at 1250 points", image: UIImage(named: "ChipotleReward")!))
+        chipotle.addReward(reward: Reward(name: "Chipotle", description: "Get 10 points per $1 spent", image: UIImage(named: "ChipotlePromotion")!))
         eatList.append(chipotle)
         list.append(chipotle)
         

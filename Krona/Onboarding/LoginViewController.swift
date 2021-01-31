@@ -43,17 +43,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
-            // Create reference to Core Data "User" Entity
+            // Create reference to Core Data "User" Entity.
             let appDel = UIApplication.shared.delegate as! AppDelegate
             let context = appDel.persistentContainer.viewContext
             let ent = NSEntityDescription.entity(forEntityName: "User", in: context)
             
-            // Create new User in Core Data
+            // Create new User in Core Data.
             let newUser = User(entity: ent!, insertInto: context)
             newUser.email = emailTextField.text!
             newUser.password = passwordTextField.text!
             
-            // Save new user to Core Data
+            // Save new user to Core Data.
             do {
                 try context.save()
             } catch {

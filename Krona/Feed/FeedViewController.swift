@@ -117,7 +117,6 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Assigns dataSourceDelegate for each collection view depending on the cell it is instantiated in.
-        
         if indexPath.row == 0 {
             if let cell = cell as? EatIconsTableViewCell {
                 cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)

@@ -15,6 +15,7 @@ import Firebase
 class OnboardingViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IBOutlets
+    
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -84,7 +85,7 @@ class OnboardingViewController: UIViewController, UITextFieldDelegate {
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: ["firstname": firstName, "lastname": lastName, "uid": result!.user.uid]) { (error) in
                         if error != nil {
-                            //Show error message
+                            // Show error message.
                             self.showError("Try again at a later time.")
                         }
                     print("New user stored in database")

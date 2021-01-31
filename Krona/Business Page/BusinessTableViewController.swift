@@ -24,7 +24,6 @@ class BusinessTableViewController: UITableViewController {
     var promotion: UIImage!
     var reward: UIImage!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +32,6 @@ class BusinessTableViewController: UITableViewController {
         dealsImage.image = deal
         promotionsImage.image = promotion
         rewardsImage.image = reward
-        
     }
 
     

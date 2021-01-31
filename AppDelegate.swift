@@ -36,6 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Add Firebase functionality.
         FirebaseApp.configure()
+        
+        if #available(iOS 13.0, *) {
+            window?.overrideUserInterfaceStyle = .light
+        }
+        
         return true
     }
 
